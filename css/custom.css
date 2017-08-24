@@ -52,6 +52,10 @@ section a:active p {
 	vertical-align: text-bottom;
 }
 
+.section {
+	padding-top: 32px;
+}
+
 h2 {
 	display: inline-block;
 	background-color: #fff;
