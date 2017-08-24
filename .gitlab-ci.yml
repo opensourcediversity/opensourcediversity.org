@@ -3,9 +3,12 @@ image: alpine:latest
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+  - echo 'Building …'
   artifacts:
     paths:
-    - public
+    - css/
+    - img/
+    - vendor/
+    - index.html
   only:
   - master
