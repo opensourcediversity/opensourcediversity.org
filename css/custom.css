@@ -25,6 +25,22 @@ h3 {
 	font-weight: 600;
 }
 
+section a h3,
+section a p {
+	color: #212529;
+}
+section a {
+	text-decoration: none !important;
+}
+section a:hover h3,
+section a:hover p,
+section a:focus h3,
+section a:focus p,
+section a:active h3,
+section a:active p {
+	opacity: .7;
+}
+
 .navbar,
 .jumbotron {
 	background-color: #45b086 !important;
@@ -63,4 +79,42 @@ h3 {
 .container .row img {
 	width: 100px;
 	border-radius: 50%;
+}
+
+
+
+[class^='color-'], [class*='color-']  {
+	border: none;
+}
+
+.color-heartofcode,
+.color-heartofcode:hover,
+.color-heartofcode:focus,
+.color-heartofcode:active {
+	background-color: #c32025;
+}
+.color-lereset,
+.color-lereset:hover,
+.color-lereset:focus,
+.color-lereset:active {
+	background-color: #feed64;
+	color: #444444;
+}
+.color-doubleunion,
+.color-doubleunion:hover,
+.color-doubleunion:focus,
+.color-doubleunion:active {
+	background-color: #d12aa4;
+}
+.color-railsgirls,
+.color-railsgirls:hover,
+.color-railsgirls:focus,
+.color-railsgirls:active {
+	background-color: #d82222;
+}
+.color-outreachy,
+.color-outreachy:hover,
+.color-outreachy:focus,
+.color-outreachy:active {
+	background-color: #58cfe5;
 }
