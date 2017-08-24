@@ -1,0 +1,66 @@
+@font-face {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Nunito Light'), local('Nunito-Light'), url('Nunito-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 600;
+	src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url('Nunito-SemiBold.ttf');
+}
+
+
+body {
+	font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+	font-weight: 300;
+}
+
+.navbar-brand,
+h1,
+h2,
+h3 {
+	font-weight: 600;
+}
+
+.navbar,
+.jumbotron {
+	background-color: #45b086 !important;
+	color: #fff;
+}
+
+.navbar-brand img {
+	height: 32px;
+	vertical-align: text-bottom;
+}
+
+h2 {
+	display: inline-block;
+	background-color: #fff;
+	color: #45b086 !important;
+	text-align: center;
+	padding: 16px;
+	margin-top: 32px;
+}
+
+hr {
+	border: 2px solid #45b086 !important;
+	border-radius: 3px;
+	margin-bottom: -4.4rem;
+	margin-top: 5rem;
+}
+
+h3 {
+	margin-top: 1rem;
+}
+
+.container.text-center p {
+	text-align: left;
+}
+
+.container .row img {
+	width: 100px;
+	border-radius: 50%;
+}
