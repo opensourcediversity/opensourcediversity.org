@@ -1,14 +1,12 @@
-image: alpine:latest
-
 pages:
   stage: deploy
   script:
-  - echo 'Building …'
+  - mkdir .public
+  - cp -r * .public
+  - mv .public public
   artifacts:
     paths:
-    - css/
-    - img/
-    - vendor/
-    - index.html
+    - public
   only:
   - master
+
