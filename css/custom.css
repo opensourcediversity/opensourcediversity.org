@@ -51,6 +51,7 @@ footer {
 
 a {
 	text-decoration: none !important;
+	outline: none !important;
 }
 
 section a:hover::after,
