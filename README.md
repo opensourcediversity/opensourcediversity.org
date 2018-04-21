@@ -1,1 +1,1 @@
-# opensourcediversity.org
+# [Open Source Diversity](opensourcediversity.org)
