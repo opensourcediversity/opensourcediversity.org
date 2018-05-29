@@ -1,3 +1,5 @@
+/* TYPOGRAPHY --------------------------------------------------------------- */
+
 @font-face {
 	font-family: 'Nunito';
 	font-style: normal;
@@ -12,7 +14,6 @@
 	src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url('Nunito-SemiBold.ttf');
 }
 
-
 body {
 	font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
 	font-weight: 300;
@@ -25,6 +26,12 @@ h3 {
 	font-weight: 600;
 }
 
+
+
+
+
+/* COLOR -------------------------------------------------------------------- */
+
 .navbar,
 .jumbotron,
 footer {
@@ -32,10 +39,12 @@ footer {
 	color: #fff;
 	border-radius: 0;
 }
-footer {
-	margin-top: 4rem;
-	padding: 2rem 0;
-}
+
+
+
+
+
+/* BUTTONS ------------------------------------------------------------------ */
 
 .btn-primary {
 	color: #45b086;
@@ -49,6 +58,9 @@ footer {
 	color: #fff;
 	background: #45b086;
 }
+
+
+/* LINKS -------------------------------------------------------------------- */
 
 a {
 	text-decoration: none !important;
@@ -87,10 +99,36 @@ footer a:active {
 	opacity: .8;
 }
 
+
+
+
+
+/* HEADER ------------------------------------------------------------------- */
+
 .navbar-brand img {
 	height: 32px;
 	vertical-align: text-bottom;
 }
+
+.navbar-toggler {
+	border: none;
+}
+
+.nav-link img {
+    width: 1rem;
+    height: 1rem;
+	opacity: .5
+}
+.nav-link:hover img,
+.nav-link:focus img {
+	opacity: 1;
+}
+
+
+
+
+
+/* CONTENT ------------------------------------------------------------------ */
 
 section {
 	padding-top: 32px;
@@ -131,6 +169,23 @@ section .container.text-center p {
 
 
 
+/* FOOTER ------------------------------------------------------------------- */
+
+footer {
+	margin-top: 4rem;
+	padding: 2rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* EXPERIMENTS -------------------------------------------------------------- */
 
 [class^='color-'], [class*='color-']  {
 	border: none;
