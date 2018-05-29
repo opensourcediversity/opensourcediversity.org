@@ -67,9 +67,9 @@ a {
 	outline: none !important;
 }
 
-section a:hover::after,
-section a:focus::after,
-section a:active::after {
+section:not(#articles) a:hover::after,
+section:not(#articles) a:focus::after,
+section:not(#articles) a:active::after {
     content: url('../img/highlight.svg');
     position: absolute;
 	top: -3px;
