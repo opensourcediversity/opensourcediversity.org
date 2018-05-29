@@ -22,6 +22,7 @@
 		<meta property="twitter:title" content="Open Source Diversity">
 		<meta property="twitter:description" content="For more diversity &amp; inclusion in free &amp; open source software communities :)">
 		<meta property="twitter:image" content="img/opensourcediversity-icon.png">
+        
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -273,8 +274,23 @@
 		<section id="events" class="container text-center">
 			<hr/>
 			<h2>Events</h2>
-			<div>
-                <div class="row">
+			<div class="row">
+                <a class="col-md-4">
+                    <div style="border: 4px #45b086 solid;border-radius: 10px;display: block;height: 500px;">
+                        <!-- <a class="twitter-follow-button" href="https://twitter.com/osdiversity?ref_src=twsrc%5Etfw" data-dnt="true" data-show-count="false">Follow @osdiversity</a> -->
+                    </div>
+                </a>
+                <a class="col-md-4">
+                    <div style="border: 4px #45b086 solid;border-radius: 10px;display: block;height: 500px;">
+                    </div>
+                </a>
+                <a class="col-md-4">
+                    <div style="border: 4px #45b086 solid;border-radius: 10px;display: block;height: 500px;" id="meetup">
+                    </div>
+                </a> 
+                
+                
+                <!-- <div class="row">
                     <a class="twitter-follow-button col-md-4" href="https://twitter.com/osdiversity?ref_src=twsrc%5Etfw" data-dnt="true" data-show-count="false">Follow @osdiversity</a>
                     <a class="col-md-4">Meetup</a>
                     <a class="col-md-4">Open calls</a>
@@ -289,7 +305,7 @@
                     <a class="col-md-4">
                         <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-link-color="#19CF86" href="https://twitter.com/osdiversity?ref_src=twsrc%5Etfw">Tweets by osdiversity</a>
                     </a>
-                </div>
+                </div> -->
                 
 			</div>
 		</section>
@@ -334,7 +350,61 @@
 				<p><a href="#">♥</a></p>
 			</div>
 		</footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            let element = document.getElementById('meetup');
+            let html = "<h1 class=\"title\"></h1><p class=\"topic\"></p><span>Venue:</span><span class=\"venue\"></span><span>Date:</span><span class=\"date\"></span>";
+            
+            console.log(element);
+            
+            function fillFields (events) {
 
+                for(i=0; i < events.length; i++){
+                    let meetupInfo = document.createElement('DIV');
+                    meetupInfo.className = 'meetupInfo';
+                    meetupInfo.innerHTML = html;
+                    
+                    title           = meetupInfo.getElementsByClassName('title')[0];
+                    venue           = meetupInfo.getElementsByClassName('title')[0];
+                    date            = meetupInfo.getElementsByClassName('date')[0];
+                    
+                    title.innerHTML = events[i].name;
+                    venue.innerHTML  = events[i].venue.name + " \n" + events[i].venue.address_1 + "\n" + events[i].venue.city;
+                    date.innerHTML  = events[i].local_date + "\n" + events[i].local_time;
+                    
+                     element.appendChild(meetupInfo);
+                }
+                
+            }
+            
+            $.ajax({
+              url: "https://api.meetup.com/opensourcediversity/events?&sign=true&photo-host=public&page=3",
+              jsonp: "callback",
+              dataType: "jsonp",
+              data: {
+                format: "json"
+              },
+              success: function(response) {
+                let events = response.data;
+                fillFields(events);
+              }
+            });
+        
+
+            /*
+            let request = 'https://api.meetup.com/opensourcediversity/events?&sign=true&photo-host=public&page=3';
+            fetch(request, {mode: 'cors'})
+              .then(function(response) {
+                console.log(response)
+                //return response.json();
+              }).catch(function(error) {  
+                  console.log('Request failed', error)  
+              });
+              .then(function(myJson) {
+                console.log(myJson);
+              });
+            */
+        </script>
 		<script src="vendor/jquery-3.2.1.slim.min.js"></script>
 		<script src="vendor/popper.min.js"></script>
 		<script src="vendor/bootstrap.min.js"></script>
