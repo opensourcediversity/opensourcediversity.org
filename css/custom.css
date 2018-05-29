@@ -154,7 +154,7 @@ h3 {
 	margin-top: 1rem;
 }
 
-section .container.text-center p {
+.text-center .col-md-4 p {
 	text-align: left;
 }
 
