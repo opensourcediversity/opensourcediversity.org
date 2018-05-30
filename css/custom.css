@@ -3,20 +3,20 @@
 @font-face {
 	font-family: 'Nunito';
 	font-style: normal;
-	font-weight: 300;
-	src: local('Nunito Light'), local('Nunito-Light'), url('Nunito-Light.ttf');
+	font-weight: normal;
+	src: local('Nunito Regular'), local('Nunito-Regular'), url('Nunito-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Nunito';
 	font-style: normal;
-	font-weight: 600;
-	src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url('Nunito-SemiBold.ttf');
+	font-weight: bold;
+	src: local('Nunito Bold'), local('Nunito-Bold'), url('Nunito-Bold.ttf');
 }
 
 body {
 	font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
-	font-weight: 300;
+	font-weight: normal;
 	line-height: 170%;
 }
 
@@ -24,7 +24,7 @@ body {
 h1,
 h2,
 h3 {
-	font-weight: 600;
+	font-weight: bold;
 }
 
 
@@ -53,7 +53,7 @@ footer {
 	color: #45b086;
 	border: 4px #45b086 solid !important;
 	background: transparent;
-	font-weight: 600;
+	font-weight: bold;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -95,7 +95,7 @@ section a:active p {
 
 footer a {
 	color: #fff !important;
-	font-weight: 600;
+	font-weight: bold;
 }
 footer a:hover,
 footer a:focus,
