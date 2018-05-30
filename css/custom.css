@@ -3,27 +3,28 @@
 @font-face {
 	font-family: 'Nunito';
 	font-style: normal;
-	font-weight: 300;
-	src: local('Nunito Light'), local('Nunito-Light'), url('Nunito-Light.ttf');
+	font-weight: normal;
+	src: local('Nunito Regular'), local('Nunito-Regular'), url('Nunito-Regular.ttf');
 }
 
 @font-face {
 	font-family: 'Nunito';
 	font-style: normal;
-	font-weight: 600;
-	src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url('Nunito-SemiBold.ttf');
+	font-weight: bold;
+	src: local('Nunito Bold'), local('Nunito-Bold'), url('Nunito-Bold.ttf');
 }
 
 body {
 	font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
-	font-weight: 300;
+	font-weight: normal;
+	line-height: 170%;
 }
 
 .navbar-brand,
 h1,
 h2,
 h3 {
-	font-weight: 600;
+	font-weight: bold;
 }
 
 
@@ -38,6 +39,8 @@ footer {
 	background-color: #45b086 !important;
 	color: #fff;
 	border-radius: 0;
+	/* better readability on bright background */
+	text-shadow: 0 0 2px rgba(10, 30, 20, .4);
 }
 
 
@@ -50,7 +53,7 @@ footer {
 	color: #45b086;
 	border: 4px #45b086 solid !important;
 	background: transparent;
-	font-weight: 600;
+	font-weight: bold;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -60,6 +63,9 @@ footer {
 }
 
 
+
+
+
 /* LINKS -------------------------------------------------------------------- */
 
 a {
@@ -67,13 +73,11 @@ a {
 	outline: none !important;
 }
 
-section:not(#articles) a:hover::after,
-section:not(#articles) a:focus::after,
-section:not(#articles) a:active::after {
-    content: url('../img/highlight.svg');
-    position: absolute;
-	top: -3px;
-	left: calc(50% - 128px);
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:active {
+    color: rgba(255,255,255,1);
 }
 
 section a h3,
@@ -91,12 +95,85 @@ section a:active p {
 
 footer a {
 	color: #fff !important;
-	font-weight: 600;
+	font-weight: bold;
 }
 footer a:hover,
 footer a:focus,
 footer a:active {
 	opacity: .8;
+}
+
+
+
+
+
+/* HOVER/FOCUS EFFECT ------------------------------------------------------- */
+
+section:not(#articles) a:hover::after,
+section:not(#articles) a:focus::after,
+section:not(#articles) a:active::after {
+    content: url('../img/highlight.svg');
+    position: absolute;
+	top: -3px;
+	left: calc(50% - 128px);
+}
+
+.nav-item,
+.navbar-brand,
+.navbar-toggler {
+	position: relative;
+}
+
+.nav-link:focus::before,
+.nav-link:hover::before,
+.nav-link:active::before,
+.navbar-brand:focus::before,
+.navbar-brand:hover::before,
+.navbar-brand:active::before,
+.navbar-toggler:focus::before,
+.navbar-toggler:hover::before {
+	content: url('../img/highlight-white-small-left.svg');
+	position: absolute;
+	top: 2px;
+	left: -10px;
+}
+
+.nav-link:focus::after,
+.nav-link:hover::after,
+.nav-link:active::after,
+.navbar-brand:focus::after,
+.navbar-brand:hover::after,
+.navbar-brand:active::after,
+.navbar-toggler:focus::after,
+.navbar-toggler:hover::after {
+	content: url('../img/highlight-white-small-right.svg');
+	position: absolute;
+	top: 2px;
+	right: -8px;
+}
+
+/* Special case for the logo */
+.navbar-brand:focus::before,
+.navbar-brand:hover::before,
+.navbar-brand:active::before {
+	left: -25px;
+}
+.navbar-brand:focus::after,
+.navbar-brand:hover::after,
+.navbar-brand:active::after {
+	right: -20px;
+}
+
+/* Special case for the mobile nav entries */
+.navbar-collapse.show .mr-auto .nav-link:focus::before,
+.navbar-collapse.show .mr-auto .nav-link:hover::before,
+.navbar-collapse.show .mr-auto .nav-link:active::before {
+	left: -20px;
+}
+.navbar-collapse.show .mr-auto .nav-link:focus::after,
+.navbar-collapse.show .mr-auto .nav-link:hover::after,
+.navbar-collapse.show .mr-auto .nav-link:active::after {
+	left: 65px;
 }
 
 
@@ -110,18 +187,24 @@ footer a:active {
 	vertical-align: text-bottom;
 }
 
-.navbar-toggler {
-	border: none;
-}
-
+/* Icons for Twitter, GitHub, IRC */
 .nav-link img {
     width: 1rem;
     height: 1rem;
-	opacity: .5
+	opacity: .6;
 }
 .nav-link:hover img,
 .nav-link:focus img {
 	opacity: 1;
+}
+
+/* Toggle icon on mobile */
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+	border: none;
+	outline: none !important;
 }
 
 
@@ -150,8 +233,14 @@ hr {
 	margin-top: 5rem;
 }
 
+[class^='col-md-'], [class*=' col-md-'] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 h3 {
 	margin-top: 1rem;
+	line-height: 130%;
 }
 
 .text-center .col-md-4 p {
