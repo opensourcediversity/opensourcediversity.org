@@ -125,7 +125,17 @@ footer a:active {
 }
 
 
+/* LOGO POSITION in JUMBOTRON  -------------------------------------------  */
 
+.jumbotron img{
+	margin: 40px 0 40px 0;
+}
+
+@media (max-width: 575px) {
+  .jumbotron img{
+    margin: 60px 0 40px 0;
+  }
+}
 
 
 /* CONTENT ------------------------------------------------------------------ */
@@ -167,21 +177,12 @@ h3 {
 
 
 
-
-
 /* FOOTER ------------------------------------------------------------------- */
 
 footer {
 	margin-top: 4rem;
 	padding: 2rem 0;
 }
-
-
-
-
-
-
-
 
 
 
@@ -222,3 +223,6 @@ footer {
 .color-outreachy:active {
 	background-color: #58cfe5;
 }
+
+
+
