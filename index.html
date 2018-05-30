@@ -275,37 +275,28 @@
 			<hr/>
 			<h2>Events</h2>
 			<div class="row">
+                    <div class="event-box" id="twitter">
+                        <a class="twitter-timeline"
+                          href="https://twitter.com/osdiversity"
+                          data-tweet-limit="2"
+                           data-width="300"
+                          data-height="400"
+                           data-link-color="#45b086">
+                            Tweets by @OpenSourceDiversity
+                        </a>
+                        <a class="twitter-follow-button"
+                          href="https://twitter.com/osdiversity"
+                           data-show-count=false>
+                        Follow @osdiversity</a>
+                    </div>
                 <a class="col-md-4">
-                    <div style="border: 4px #45b086 solid;border-radius: 10px;display: block;height: 500px;">
-                        <!-- <a class="twitter-follow-button" href="https://twitter.com/osdiversity?ref_src=twsrc%5Etfw" data-dnt="true" data-show-count="false">Follow @osdiversity</a> -->
+                    <div class="event-box" id="open-calls">
                     </div>
                 </a>
                 <a class="col-md-4">
-                    <div style="border: 4px #45b086 solid;border-radius: 10px;display: block;height: 500px;">
-                    </div>
-                </a>
-                <a class="col-md-4">
-                    <div style="border: 4px #45b086 solid;border-radius: 10px;display: block;height: 500px;" id="meetup">
+                    <div class="event-box" id="meetup">
                     </div>
                 </a> 
-                
-                
-                <!-- <div class="row">
-                    <a class="twitter-follow-button col-md-4" href="https://twitter.com/osdiversity?ref_src=twsrc%5Etfw" data-dnt="true" data-show-count="false">Follow @osdiversity</a>
-                    <a class="col-md-4">Meetup</a>
-                    <a class="col-md-4">Open calls</a>
-                </div>
-                <div class="row">
-                    <a class="col-md-4">
-                        <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-link-color="#19CF86" href="https://twitter.com/osdiversity?ref_src=twsrc%5Etfw">Tweets by osdiversity</a>
-                    </a>
-                    <a class="col-md-4">
-                        <iframe width="300" height="500" src="http://meetu.ps/3hWbbW" frameborder="0"></iframe>
-                    </a>
-                    <a class="col-md-4">
-                        <a class="twitter-timeline" data-width="300" data-height="500" data-dnt="true" data-link-color="#19CF86" href="https://twitter.com/osdiversity?ref_src=twsrc%5Etfw">Tweets by osdiversity</a>
-                    </a>
-                </div> -->
                 
 			</div>
 		</section>
@@ -350,64 +341,33 @@
 				<p><a href="#">♥</a></p>
 			</div>
 		</footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            let element = document.getElementById('meetup');
-            let html = "<h1 class=\"title\"></h1><p class=\"topic\"></p><span>Venue:</span><span class=\"venue\"></span><span>Date:</span><span class=\"date\"></span>";
-            
-            console.log(element);
-            
-            function fillFields (events) {
-
-                for(i=0; i < events.length; i++){
-                    let meetupInfo = document.createElement('DIV');
-                    meetupInfo.className = 'meetupInfo';
-                    meetupInfo.innerHTML = html;
-                    
-                    title           = meetupInfo.getElementsByClassName('title')[0];
-                    venue           = meetupInfo.getElementsByClassName('title')[0];
-                    date            = meetupInfo.getElementsByClassName('date')[0];
-                    
-                    title.innerHTML = events[i].name;
-                    venue.innerHTML  = events[i].venue.name + " \n" + events[i].venue.address_1 + "\n" + events[i].venue.city;
-                    date.innerHTML  = events[i].local_date + "\n" + events[i].local_time;
-                    
-                     element.appendChild(meetupInfo);
-                }
-                
-            }
-            
-            $.ajax({
-              url: "https://api.meetup.com/opensourcediversity/events?&sign=true&photo-host=public&page=3",
-              jsonp: "callback",
-              dataType: "jsonp",
-              data: {
-                format: "json"
-              },
-              success: function(response) {
-                let events = response.data;
-                fillFields(events);
-              }
-            });
-        
-
-            /*
-            let request = 'https://api.meetup.com/opensourcediversity/events?&sign=true&photo-host=public&page=3';
-            fetch(request, {mode: 'cors'})
-              .then(function(response) {
-                console.log(response)
-                //return response.json();
-              }).catch(function(error) {  
-                  console.log('Request failed', error)  
-              });
-              .then(function(myJson) {
-                console.log(myJson);
-              });
-            */
-        </script>
 		<script src="vendor/jquery-3.2.1.slim.min.js"></script>
 		<script src="vendor/popper.min.js"></script>
 		<script src="vendor/bootstrap.min.js"></script>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        
+        <script>
+            window.twttr = (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0],
+                t = window.twttr || {};
+              if (d.getElementById(id)) return t;
+              js = d.createElement(s);
+              js.id = id;
+              js.src = "https://platform.twitter.com/widgets.js";
+              fjs.parentNode.insertBefore(js, fjs);
+
+              t._e = [];
+              t.ready = function(f) {
+                t._e.push(f);
+              };
+
+              return t;
+            }(document, "script", "twitter-wjs"));
+            
+        </script>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts/meetupAPI.js"> </script>
+            
+        </script>
 	</body>
 </html>
