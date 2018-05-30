@@ -17,6 +17,7 @@
 body {
 	font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
 	font-weight: 300;
+	line-height: 170%;
 }
 
 .navbar-brand,
@@ -60,6 +61,9 @@ footer {
 	color: #fff;
 	background: #45b086;
 }
+
+
+
 
 
 /* LINKS -------------------------------------------------------------------- */
@@ -229,8 +233,14 @@ hr {
 	margin-top: 5rem;
 }
 
+[class^='col-md-'], [class*=' col-md-'] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 h3 {
 	margin-top: 1rem;
+	line-height: 130%;
 }
 
 .text-center .col-md-4 p {
