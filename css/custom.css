@@ -1,30 +1,30 @@
 /* TYPOGRAPHY --------------------------------------------------------------- */
 
 @font-face {
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: normal;
-	src: local('Nunito Regular'), local('Nunito-Regular'), url('Nunito-Regular.ttf');
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Nunito Regular'), local('Nunito-Regular'), url('Nunito-Regular.ttf');
 }
 
 @font-face {
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: bold;
-	src: local('Nunito Bold'), local('Nunito-Bold'), url('Nunito-Bold.ttf');
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: bold;
+    src: local('Nunito Bold'), local('Nunito-Bold'), url('Nunito-Bold.ttf');
 }
 
 body {
-	font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
-	font-weight: normal;
-	line-height: 170%;
+    font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+    font-weight: normal;
+    line-height: 170%;
 }
 
 .navbar-brand,
 h1,
 h2,
 h3 {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 
@@ -36,11 +36,11 @@ h3 {
 .navbar,
 .jumbotron,
 footer {
-	background-color: #45b086 !important;
-	color: #fff;
-	border-radius: 0;
-	/* better readability on bright background */
-	text-shadow: 0 0 2px rgba(10, 30, 20, .4);
+    background-color: #45b086 !important;
+    color: #fff;
+    border-radius: 0;
+    /* better readability on bright background */
+    text-shadow: 0 0 2px rgba(10, 30, 20, .4);
 }
 
 
@@ -50,16 +50,16 @@ footer {
 /* BUTTONS ------------------------------------------------------------------ */
 
 .btn-primary {
-	color: #45b086;
-	border: 4px #45b086 solid !important;
-	background: transparent;
-	font-weight: bold;
+    color: #45b086;
+    border: 4px #45b086 solid !important;
+    background: transparent;
+    font-weight: bold;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	color: #fff;
-	background: #45b086;
+    color: #fff;
+    background: #45b086;
 }
 
 
@@ -69,8 +69,8 @@ footer {
 /* LINKS -------------------------------------------------------------------- */
 
 a {
-	text-decoration: none !important;
-	outline: none !important;
+    text-decoration: none !important;
+    outline: none !important;
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -82,7 +82,7 @@ a {
 
 section a h3,
 section a p {
-	color: #212529;
+    color: #212529;
 }
 section a:hover h3,
 section a:hover p,
@@ -90,17 +90,17 @@ section a:focus h3,
 section a:focus p,
 section a:active h3,
 section a:active p {
-	color: #45b086;
+    color: #45b086;
 }
 
 footer a {
-	color: #fff !important;
-	font-weight: bold;
+    color: #fff !important;
+    font-weight: bold;
 }
 footer a:hover,
 footer a:focus,
 footer a:active {
-	opacity: .8;
+    opacity: .8;
 }
 
 
@@ -109,19 +109,19 @@ footer a:active {
 
 /* HOVER/FOCUS EFFECT ------------------------------------------------------- */
 
-section:not(#articles) a:hover::after,
-section:not(#articles) a:focus::after,
-section:not(#articles) a:active::after {
+section:not(.no-highlight) a:hover::after,
+section:not(.no-highlight) a:focus::after,
+section:not(.no-highlight) a:active::after {
     content: url('../img/highlight.svg');
     position: absolute;
-	top: -3px;
-	left: calc(50% - 128px);
+    top: -3px;
+    left: calc(50% - 128px);
 }
 
 .nav-item,
 .navbar-brand,
 .navbar-toggler {
-	position: relative;
+    position: relative;
 }
 
 .nav-link:focus::before,
@@ -132,10 +132,10 @@ section:not(#articles) a:active::after {
 .navbar-brand:active::before,
 .navbar-toggler:focus::before,
 .navbar-toggler:hover::before {
-	content: url('../img/highlight-white-small-left.svg');
-	position: absolute;
-	top: 2px;
-	left: -10px;
+    content: url('../img/highlight-white-small-left.svg');
+    position: absolute;
+    top: 2px;
+    left: -10px;
 }
 
 .nav-link:focus::after,
@@ -146,34 +146,34 @@ section:not(#articles) a:active::after {
 .navbar-brand:active::after,
 .navbar-toggler:focus::after,
 .navbar-toggler:hover::after {
-	content: url('../img/highlight-white-small-right.svg');
-	position: absolute;
-	top: 2px;
-	right: -8px;
+    content: url('../img/highlight-white-small-right.svg');
+    position: absolute;
+    top: 2px;
+    right: -8px;
 }
 
 /* Special case for the logo */
 .navbar-brand:focus::before,
 .navbar-brand:hover::before,
 .navbar-brand:active::before {
-	left: -25px;
+    left: -25px;
 }
 .navbar-brand:focus::after,
 .navbar-brand:hover::after,
 .navbar-brand:active::after {
-	right: -20px;
+    right: -20px;
 }
 
 /* Special case for the mobile nav entries */
 .navbar-collapse.show .mr-auto .nav-link:focus::before,
 .navbar-collapse.show .mr-auto .nav-link:hover::before,
 .navbar-collapse.show .mr-auto .nav-link:active::before {
-	left: -20px;
+    left: -20px;
 }
 .navbar-collapse.show .mr-auto .nav-link:focus::after,
 .navbar-collapse.show .mr-auto .nav-link:hover::after,
 .navbar-collapse.show .mr-auto .nav-link:active::after {
-	left: 65px;
+    left: 65px;
 }
 
 
@@ -183,28 +183,28 @@ section:not(#articles) a:active::after {
 /* HEADER ------------------------------------------------------------------- */
 
 .navbar-brand img {
-	height: 32px;
-	vertical-align: text-bottom;
+    height: 32px;
+    vertical-align: text-bottom;
 }
 
 /* Icons for Twitter, GitHub, IRC */
 .nav-link img {
     width: 1rem;
     height: 1rem;
-	opacity: .6;
+    opacity: .6;
 }
 .nav-link:hover img,
 .nav-link:focus img {
-	opacity: 1;
+    opacity: 1;
 }
 
 /* Toggle icon on mobile */
 .navbar-dark .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 .navbar-toggler {
-	border: none;
-	outline: none !important;
+    border: none;
+    outline: none !important;
 }
 
 
@@ -214,23 +214,23 @@ section:not(#articles) a:active::after {
 /* CONTENT ------------------------------------------------------------------ */
 
 section {
-	padding-top: 32px;
+    padding-top: 32px;
 }
 
 h2 {
-	display: inline-block;
-	background-color: #fff;
-	color: #45b086 !important;
-	text-align: center;
-	padding: 16px;
-	margin-top: 32px;
+    display: inline-block;
+    background-color: #fff;
+    color: #45b086 !important;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
 }
 
 hr {
-	border: 2px solid #45b086 !important;
-	border-radius: 3px;
-	margin-bottom: -4.4rem;
-	margin-top: 5rem;
+    border: 2px solid #45b086 !important;
+    border-radius: 3px;
+    margin-bottom: -4.4rem;
+    margin-top: 5rem;
 }
 
 [class^='col-md-'], [class*=' col-md-'] {
@@ -239,19 +239,19 @@ hr {
 }
 
 h3 {
-	margin-top: 1rem;
-	line-height: 130%;
+    margin-top: 1rem;
+    line-height: 130%;
 }
 
 .text-center .col-md-4 p {
-	text-align: left;
+    text-align: left;
 }
 
 .container .row img {
-	width: 100px;
-	max-height: 100px;
-	border-radius: 50%;
-	margin-top: 20px;
+    width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 
@@ -265,45 +265,45 @@ h3 {
 /* FOOTER ------------------------------------------------------------------- */
 
 footer {
-	margin-top: 4rem;
-	padding: 2rem 0;
+    margin-top: 4rem;
+    padding: 2rem 0;
 }
 
 
 /* EXPERIMENTS -------------------------------------------------------------- */
 
 [class^='color-'], [class*='color-']  {
-	border: none;
+    border: none;
 }
 
 .color-heartofcode,
 .color-heartofcode:hover,
 .color-heartofcode:focus,
 .color-heartofcode:active {
-	background-color: #c32025;
+    background-color: #c32025;
 }
 .color-lereset,
 .color-lereset:hover,
 .color-lereset:focus,
 .color-lereset:active {
-	background-color: #feed64;
-	color: #444444;
+    background-color: #feed64;
+    color: #444444;
 }
 .color-doubleunion,
 .color-doubleunion:hover,
 .color-doubleunion:focus,
 .color-doubleunion:active {
-	background-color: #d12aa4;
+    background-color: #d12aa4;
 }
 .color-railsgirls,
 .color-railsgirls:hover,
 .color-railsgirls:focus,
 .color-railsgirls:active {
-	background-color: #d82222;
+    background-color: #d82222;
 }
 .color-outreachy,
 .color-outreachy:hover,
 .color-outreachy:focus,
 .color-outreachy:active {
-	background-color: #58cfe5;
+    background-color: #58cfe5;
 }
