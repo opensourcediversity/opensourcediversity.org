@@ -1,3 +1,107 @@
+/* Twitter Element */
+
+
+
+
+.timeline-InformationCircle-widgetParent {
+    position: relative;
+}
+
+/*Timeline header*/
+
+.event-row {  
+margin-left: 30px;
+    
+}
+
+.timeline-Widget--edge {
+    border-radius: 5px;
+}
+
+timeline-Widget {
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.timeline-Header {
+    padding: 10px;
+}
+
+.InformationCircle-widgetParent {
+    position: relative;
+}
+
+
+.timeline-Header-title {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #292F33;
+}
+
+
+.u-inlineBlock {
+    display: inline-block!important;
+    max-width: 100%;
+}
+
+.timeline-Header-byline {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #8899A6;
+}
+
+
+.Avatar--edge {
+    border-radius: 50%;
+}
+
+.Avatar {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img {
+    border: 0;
+}
+
+.timeline-InformationCircle-widgetParent {
+    position: relative;
+}
+
+
+/*Body tags*/
+
+.timeline-Body {
+    position: relative;
+    border-top: 1px solid rgba(15,70,100,.12);
+    border-bottom: 1px solid rgba(15,70,100,.12);
+}
+
+.SandboxRoot {
+    display: block;
+    background: 0 0;
+    font: normal normal 14px/1.4 Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;
+    color: #292F33;
+    white-space: normal;
+    white-space: initial;
+}
+
+.timeline-Tweet {
+    padding: 10px;
+}
+
+div {
+    display: block;
+}
+.u-cf:after, .u-cf:before {
+    content: " ";
+    display: table;
+}
+
+
 /* TYPOGRAPHY --------------------------------------------------------------- */
 
 @font-face {
@@ -175,10 +279,7 @@ h3 {
     margin: 10px 0px;
     display: flex;
     flex-direction: column;
-}
 
-#twitter a.col-md-4 {
-    display: none;
 }
 
 .twitter-follow-button {
