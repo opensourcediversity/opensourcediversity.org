@@ -211,6 +211,15 @@ section:not(#articles, #events) a:active::after {
     left: calc(50% - 128px);
 }
 
+section:not(#articles, #events) a:hover::after,
+section:not(#articles, #events) a:focus::after,
+section:not(#articles, #events) a:active::after {
+    content: url('../img/highlight.svg');
+    position: absolute;
+	top: -3px;
+    left: calc(50% - 128px);
+}
+
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus,
@@ -419,6 +428,38 @@ h3 {
 }
 
 /* LOGO --------------------------------------------------------------------- */
+
+/* EVENTS ------------------------------------------------------------------ */
+.event-box {
+    border: 4px #45b086 solid;
+    border-radius: 10px;
+    height: 600px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#twitter a.col-md-4 {
+    display: none;
+}
+
+.twitter-follow-button {
+    margin: auto;
+}
+
+.meetupInfo {
+    color: black;
+}
+
+.meetupInfo div {
+    text-align: left;
+    padding: 0px 12px;
+}
+
+.meetupInfo div b {
+    font-weight: 900;
+    margin-right: 3px;
+}
 
 .jumbotron img {
     margin: 60px 0 10px 0;
