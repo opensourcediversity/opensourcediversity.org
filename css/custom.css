@@ -10,16 +10,41 @@
 /*Timeline header*/
 
 .event-row {  
-margin-left: 30px;
-    
+    margin-left: 30px;
+
+}
+
+.Icon--informationCircleWhite {
+    height: 18px;
+    width: 18px;
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.or…021.778-21.778S40.008%206.222%2028%206.222z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+}
+
+.Icon {
+    display: inline-block;
+    height: 1.25em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: text-bottom;
 }
 
 .timeline-Widget--edge {
     border-radius: 5px;
 }
 
-timeline-Widget {
-    max-width: 1200px;
+a:visited {
+    color: #3b94d9;
+    text-decoration: none;
+    outline: 0;
+}
+
+.osdivrsity{
+
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.timeline-Widget {
     background-color: #fff;
     border-radius: 4px;
 }
@@ -105,29 +130,29 @@ div {
 /* TYPOGRAPHY --------------------------------------------------------------- */
 
 @font-face {
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 300;
-	src: local('Nunito Light'), local('Nunito-Light'), url('Nunito-Light.ttf');
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Nunito Light'), local('Nunito-Light'), url('Nunito-Light.ttf');
 }
 
 @font-face {
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 600;
-	src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url('Nunito-SemiBold.ttf');
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Nunito SemiBold'), local('Nunito-SemiBold'), url('Nunito-SemiBold.ttf');
 }
 
 body {
-	font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
-	font-weight: 300;
+    font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+    font-weight: 300;
 }
 
 .navbar-brand,
 h1,
 h2,
 h3 {
-	font-weight: 600;
+    font-weight: 600;
 }
 
 
@@ -139,9 +164,9 @@ h3 {
 .navbar,
 .jumbotron,
 footer {
-	background-color: #45b086 !important;
-	color: #fff;
-	border-radius: 0;
+    background-color: #45b086 !important;
+    color: #fff;
+    border-radius: 0;
 }
 
 
@@ -151,24 +176,24 @@ footer {
 /* BUTTONS ------------------------------------------------------------------ */
 
 .btn-primary {
-	color: #45b086;
-	border: 4px #45b086 solid !important;
-	background: transparent;
-	font-weight: 600;
+    color: #45b086;
+    border: 4px #45b086 solid !important;
+    background: transparent;
+    font-weight: 600;
 }
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	color: #fff;
-	background: #45b086;
+    color: #fff;
+    background: #45b086;
 }
 
 
 /* LINKS -------------------------------------------------------------------- */
 
 a {
-	text-decoration: none !important;
-	outline: none !important;
+    text-decoration: none !important;
+    outline: none !important;
 }
 
 section:not(#articles, #events) a:hover::after,
@@ -176,13 +201,13 @@ section:not(#articles, #events) a:focus::after,
 section:not(#articles, #events) a:active::after {
     content: url('../img/highlight.svg');
     position: absolute;
-	top: -3px;
-	left: calc(50% - 128px);
+    top: -3px;
+    left: calc(50% - 128px);
 }
 
 section a h3,
 section a p {
-	color: #212529;
+    color: #212529;
 }
 section a:hover h3,
 section a:hover p,
@@ -190,17 +215,17 @@ section a:focus h3,
 section a:focus p,
 section a:active h3,
 section a:active p {
-	color: #45b086;
+    color: #45b086;
 }
 
 footer a {
-	color: #fff !important;
-	font-weight: 600;
+    color: #fff !important;
+    font-weight: 600;
 }
 footer a:hover,
 footer a:focus,
 footer a:active {
-	opacity: .8;
+    opacity: .8;
 }
 
 
@@ -210,22 +235,22 @@ footer a:active {
 /* HEADER ------------------------------------------------------------------- */
 
 .navbar-brand img {
-	height: 32px;
-	vertical-align: text-bottom;
+    height: 32px;
+    vertical-align: text-bottom;
 }
 
 .navbar-toggler {
-	border: none;
+    border: none;
 }
 
 .nav-link img {
     width: 1rem;
     height: 1rem;
-	opacity: .5
+    opacity: .5
 }
 .nav-link:hover img,
 .nav-link:focus img {
-	opacity: 1;
+    opacity: 1;
 }
 
 
@@ -235,38 +260,38 @@ footer a:active {
 /* CONTENT ------------------------------------------------------------------ */
 
 section {
-	padding-top: 32px;
+    padding-top: 32px;
 }
 
 h2 {
-	display: inline-block;
-	background-color: #fff;
-	color: #45b086 !important;
-	text-align: center;
-	padding: 16px;
-	margin-top: 32px;
+    display: inline-block;
+    background-color: #fff;
+    color: #45b086 !important;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
 }
 
 hr {
-	border: 2px solid #45b086 !important;
-	border-radius: 3px;
-	margin-bottom: -4.4rem;
-	margin-top: 5rem;
+    border: 2px solid #45b086 !important;
+    border-radius: 3px;
+    margin-bottom: -4.4rem;
+    margin-top: 5rem;
 }
 
 h3 {
-	margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 .text-center .col-md-4 p {
-	text-align: left;
+    text-align: left;
 }
 
 .container .row img {
-	width: 100px;
-	max-height: 100px;
-	border-radius: 50%;
-	margin-top: 20px;
+    width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
 
@@ -305,8 +330,8 @@ h3 {
 /* FOOTER ------------------------------------------------------------------- */
 
 footer {
-	margin-top: 4rem;
-	padding: 2rem 0;
+    margin-top: 4rem;
+    padding: 2rem 0;
 }
 
 
@@ -321,37 +346,37 @@ footer {
 /* EXPERIMENTS -------------------------------------------------------------- */
 
 [class^='color-'], [class*='color-']  {
-	border: none;
+    border: none;
 }
 
 .color-heartofcode,
 .color-heartofcode:hover,
 .color-heartofcode:focus,
 .color-heartofcode:active {
-	background-color: #c32025;
+    background-color: #c32025;
 }
 .color-lereset,
 .color-lereset:hover,
 .color-lereset:focus,
 .color-lereset:active {
-	background-color: #feed64;
-	color: #444444;
+    background-color: #feed64;
+    color: #444444;
 }
 .color-doubleunion,
 .color-doubleunion:hover,
 .color-doubleunion:focus,
 .color-doubleunion:active {
-	background-color: #d12aa4;
+    background-color: #d12aa4;
 }
 .color-railsgirls,
 .color-railsgirls:hover,
 .color-railsgirls:focus,
 .color-railsgirls:active {
-	background-color: #d82222;
+    background-color: #d82222;
 }
 .color-outreachy,
 .color-outreachy:hover,
 .color-outreachy:focus,
 .color-outreachy:active {
-	background-color: #58cfe5;
+    background-color: #58cfe5;
 }
