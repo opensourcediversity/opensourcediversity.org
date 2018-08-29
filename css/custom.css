@@ -1,3 +1,132 @@
+/* Twitter Element */
+
+
+
+
+.timeline-InformationCircle-widgetParent {
+    position: relative;
+}
+
+/*Timeline header*/
+
+.event-row {  
+    margin-left: 30px;
+
+}
+
+.Icon--informationCircleWhite {
+    height: 18px;
+    width: 18px;
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.or…021.778-21.778S40.008%206.222%2028%206.222z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+}
+
+.Icon {
+    display: inline-block;
+    height: 1.25em;
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: text-bottom;
+}
+
+.timeline-Widget--edge {
+    border-radius: 5px;
+}
+
+a:visited {
+    color: #3b94d9;
+    text-decoration: none;
+    outline: 0;
+}
+
+.osdivrsity{
+
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.timeline-Widget {
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.timeline-Header {
+    padding: 10px;
+}
+
+.InformationCircle-widgetParent {
+    position: relative;
+}
+
+
+.timeline-Header-title {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #292F33;
+}
+
+
+.u-inlineBlock {
+    display: inline-block!important;
+    max-width: 100%;
+}
+
+.timeline-Header-byline {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #8899A6;
+}
+
+
+.Avatar--edge {
+    border-radius: 50%;
+}
+
+.Avatar {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img {
+    border: 0;
+}
+
+.timeline-InformationCircle-widgetParent {
+    position: relative;
+}
+
+
+/*Body tags*/
+
+.timeline-Body {
+    position: relative;
+    border-top: 1px solid rgba(15,70,100,.12);
+    border-bottom: 1px solid rgba(15,70,100,.12);
+}
+
+.SandboxRoot {
+    display: block;
+    background: 0 0;
+    font: normal normal 14px/1.4 Helvetica,Roboto,"Segoe UI",Calibri,sans-serif;
+    color: #292F33;
+    white-space: normal;
+    white-space: initial;
+}
+
+.timeline-Tweet {
+    padding: 10px;
+}
+
+div {
+    display: block;
+}
+.u-cf:after, .u-cf:before {
+    content: " ";
+    display: table;
+}
+
+
 /* TYPOGRAPHY --------------------------------------------------------------- */
 
 @font-face {
@@ -58,8 +187,8 @@ footer {
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active {
-	color: #fff;
-	background: #45b086;
+    color: #fff;
+    background: #45b086;
 }
 
 
@@ -69,8 +198,17 @@ footer {
 /* LINKS -------------------------------------------------------------------- */
 
 a {
-	text-decoration: none !important;
-	outline: none !important;
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+section:not(#articles, #events) a:hover::after,
+section:not(#articles, #events) a:focus::after,
+section:not(#articles, #events) a:active::after {
+    content: url('../img/highlight.svg');
+    position: absolute;
+    top: -3px;
+    left: calc(50% - 128px);
 }
 
 section:not(#articles, #events) a:hover::after,
@@ -91,7 +229,7 @@ section:not(#articles, #events) a:active::after {
 
 section a h3,
 section a p {
-	color: #212529;
+    color: #212529;
 }
 section a:hover h3,
 section a:hover p,
@@ -99,7 +237,7 @@ section a:focus h3,
 section a:focus p,
 section a:active h3,
 section a:active p {
-	color: #45b086;
+    color: #45b086;
 }
 
 footer a {
@@ -109,7 +247,7 @@ footer a {
 footer a:hover,
 footer a:focus,
 footer a:active {
-	opacity: .8;
+    opacity: .8;
 }
 
 
@@ -192,8 +330,8 @@ section:not(#articles) a:active::after {
 /* HEADER ------------------------------------------------------------------- */
 
 .navbar-brand img {
-	height: 32px;
-	vertical-align: text-bottom;
+    height: 32px;
+    vertical-align: text-bottom;
 }
 
 /* Icons for Twitter, GitHub, IRC */
@@ -204,7 +342,7 @@ section:not(#articles) a:active::after {
 }
 .nav-link:hover img,
 .nav-link:focus img {
-	opacity: 1;
+    opacity: 1;
 }
 
 /* Toggle icon on mobile */
@@ -223,23 +361,23 @@ section:not(#articles) a:active::after {
 /* CONTENT ------------------------------------------------------------------ */
 
 section {
-	padding-top: 32px;
+    padding-top: 32px;
 }
 
 h2 {
-	display: inline-block;
-	background-color: #fff;
-	color: #45b086 !important;
-	text-align: center;
-	padding: 16px;
-	margin-top: 32px;
+    display: inline-block;
+    background-color: #fff;
+    color: #45b086 !important;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
 }
 
 hr {
-	border: 2px solid #45b086 !important;
-	border-radius: 3px;
-	margin-bottom: -4.4rem;
-	margin-top: 5rem;
+    border: 2px solid #45b086 !important;
+    border-radius: 3px;
+    margin-bottom: -4.4rem;
+    margin-top: 5rem;
 }
 
 [class^='col-md-'], [class*=' col-md-'] {
@@ -253,16 +391,41 @@ h3 {
 }
 
 .text-center .col-md-4 p {
-	text-align: left;
+    text-align: left;
 }
 
 .container .row img {
-	width: 100px;
-	max-height: 100px;
-	border-radius: 50%;
-	margin-top: 20px;
+    width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
 }
 
+
+
+/* EVENTS ------------------------------------------------------------------ */
+.event-box {
+    border: 4px #45b086 solid;
+    border-radius: 10px;
+    height: 600px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.twitter-follow-button {
+    margin: auto;
+}
+
+.meetupInfo {
+    color: black;
+}
+
+.meetupInfo div {
+    text-align: left;
+    padding: 0px 12px;
+}
 
 /* LOGO --------------------------------------------------------------------- */
 
@@ -306,45 +469,45 @@ h3 {
 /* FOOTER ------------------------------------------------------------------- */
 
 footer {
-	margin-top: 4rem;
-	padding: 2rem 0;
+    margin-top: 4rem;
+    padding: 2rem 0;
 }
 
 
 /* EXPERIMENTS -------------------------------------------------------------- */
 
 [class^='color-'], [class*='color-']  {
-	border: none;
+    border: none;
 }
 
 .color-heartofcode,
 .color-heartofcode:hover,
 .color-heartofcode:focus,
 .color-heartofcode:active {
-	background-color: #c32025;
+    background-color: #c32025;
 }
 .color-lereset,
 .color-lereset:hover,
 .color-lereset:focus,
 .color-lereset:active {
-	background-color: #feed64;
-	color: #444444;
+    background-color: #feed64;
+    color: #444444;
 }
 .color-doubleunion,
 .color-doubleunion:hover,
 .color-doubleunion:focus,
 .color-doubleunion:active {
-	background-color: #d12aa4;
+    background-color: #d12aa4;
 }
 .color-railsgirls,
 .color-railsgirls:hover,
 .color-railsgirls:focus,
 .color-railsgirls:active {
-	background-color: #d82222;
+    background-color: #d82222;
 }
 .color-outreachy,
 .color-outreachy:hover,
 .color-outreachy:focus,
 .color-outreachy:active {
-	background-color: #58cfe5;
+    background-color: #58cfe5;
 }
