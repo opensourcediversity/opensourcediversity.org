@@ -30,6 +30,11 @@ As framework we use [🅱️ Bootstrap](https://getbootstrap.com) which you migh
 - SVG images can be compressed using the also lossless scour using the command line: `scour -i filename.svg -o filename-compressed.svg --create-groups --enable-id-stripping --enable-comment-stripping --shorten-ids --remove-metadata --strip-xml-prolog --no-line-breaks;`
 
 
+## ♥ Code of Conduct
+
+Please note that Open Source Diversity has a [Contributor Code of Conduct](https://github.com/opensourcediversity/opensourcediversity.org/blob/master/code-of-conduct.md) based on the [Contributor Covenant](https://www.contributor-covenant.org). By participating in this project online or at events you agree to abide by its terms.
+
+
 ## 📜 License
 
 - **🔀 You can use & modify everything as long as you credit [Open Source Diversity](https://opensourcediversity.org) and use the same license for your resulting work.** [Code license is AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) and content is [Creative Commons Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/).
