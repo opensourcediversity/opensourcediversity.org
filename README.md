@@ -35,3 +35,63 @@ As framework we use [🅱️ Bootstrap](https://getbootstrap.com) which you migh
 - **🔀 You can use & modify everything as long as you credit [Open Source Diversity](https://opensourcediversity.org) and use the same license for your resulting work.** [Code license is AGPLv3](https://www.gnu.org/licenses/agpl-3.0.en.html) and content is [Creative Commons Attribution-ShareAlike](https://creativecommons.org/licenses/by-sa/4.0/).
 - 🎨 Logo by [Elio Qoshi](https://elioqoshi.me) of [Ura Design](https://ura.design) & [Open Source Design](https://opensourcedesign.net)
 - 📄 [Nunito typeface](https://github.com/vernnobile/NunitoFont) by [Vernon Adams](http://sansoxygen.com)
+
+
+## 🎉 Promotional material
+
+Open Source Diversity promotional material like logos, banners, stickers and presentation slides is all in the [`promo` folder](https://github.com/opensourcediversity/opensourcediversity.org/tree/master/promo). Everyone is welcome to print material and present Open Source Diversity at events – permission is not needed, everyone in the community can help! 😊
+
+If you do print banners or stickers, best try to get organizations to sponsor it. If that doesn’t work, you can use our [Open Collective](https://opencollective.com/opensourcediversity) to reimburse the costs. Ideally drop a short note in [our forum](https://discourse.opensourcediversity.org) about your plans of what to print and for which event as we have very limited funds. 🙂
+
+
+### 🌼 Logo
+
+<img src="promo/sticker-45mm.jpg" width="200px" />
+
+The logo is `#fff` white on `#45b086` green/turquoise. If you need the logo on white, use the inverse. There are more logo versions in the [`img` folder](https://github.com/opensourcediversity/opensourcediversity.org/tree/master/img).
+
+As typeface we use [Nunito](https://github.com/opensourcediversity/opensourcediversity.org/tree/master/css) in Regular and Bold, without other weights nor italic styles.
+
+
+
+### 🖼 Banner
+
+If you write a Tweet, Mastodon toot or other kind of post and need a bigger banner, use this:
+
+![](promo/banner-website.png)
+
+
+
+### ⭕ Stickers
+
+<img src="promo/sticker-mockup.png" width="200px" />
+
+We usually order [Flyeralarm outdoor stickers](https://www.flyeralarm.com/de/shop/configurator/index/quantity/7983970#159=601&160=602&161=615&162=585), 4.5 cm round. If you want to order some, use the file [`sticker-45mm.jpg`](https://raw.githubusercontent.com/opensourcediversity/opensourcediversity.org/master/promo/sticker-45mm.jpg) for printing.
+
+
+
+### 📺 Presentation
+
+![](promo/banner-presentation.png)
+
+We have the [`Open Source Diversity presentation.pdf`](https://github.com/opensourcediversity/opensourcediversity.org/blob/master/promo/Open%20Source%20Diversity%20presentation.pdf) which is roughly 20 minutes long, and [`Open Source Diversity presentation lightning.pdf`](https://github.com/opensourcediversity/opensourcediversity.org/blob/master/promo/Open%20Source%20Diversity%20presentation%20lightning.pdf) for 5-minute lightning talks.
+
+Anyone is encouraged to give the presentation at a conference! 😊 If you do so, feel free to use these texts for submitting the talk:
+
+> **Diversity and Inclusion in Free & Open Source Software**
+>
+> Diversity & inclusion is very important especially for free & open source community, because people in tech nowadays are hired to a big part because of their open source contributions. To improve the balance there, the free & open source software community is an important starting point.
+>
+> We are building https://opensourcediversity.org to collect the projects and resources in this field. It is aimed at maintainers and contributors of open source projects who want to improve, as well as people from underrepresented groups who are interested in free & open source software but don’t know where to start.
+
+Longer description:
+
+> Diversity & inclusion is very important especially for free & open source community, because:
+>
+> - People in tech nowadays are hired to a big part because of their open source contributions. To improve the balance there, the free & open source software community is an important starting point.
+> - More diverse teams make for more innovation and serving users better than homogenous teams.
+> - Diverse open source projects are more welcoming and friendly towards new contributors, encouraging learning and collaboration.
+>
+> We are building https://opensourcediversity.org to collect the projects and resources in this field. It is aimed at maintainers and contributors of open source projects who want to improve, as well as people from underrepresented groups who are interested in free & open source software but don’t know where to start.
+>
+> This talk is a showcase of the different initiatives for diversity & inclusion existing in open source, and a start for discussion where we can improve more.
