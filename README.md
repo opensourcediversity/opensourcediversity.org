@@ -1,8 +1,8 @@
 # [Open Source Diversity 🌼](https://opensourcediversity.org)
 
 **For more diversity & inclusion in free & open source software communities 😊**
-[![Backers on Open Collective](https://opencollective.com/opensourcediversity/backers/badge.svg)](#backers)
- [![Sponsors on Open Collective](https://opencollective.com/opensourcediversity/sponsors/badge.svg)](#sponsors) 
+
+[![Backers on Open Collective](https://opencollective.com/opensourcediversity/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/opensourcediversity/sponsors/badge.svg)](#sponsors) 
 
 
 ## 🐛 Issues or suggestions
