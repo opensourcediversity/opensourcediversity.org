@@ -2,6 +2,8 @@
 
 **For more diversity & inclusion in free & open source software communities 😊**
 
+[![Backers on Open Collective](https://opencollective.com/opensourcediversity/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/opensourcediversity/sponsors/badge.svg)](#sponsors) 
+
 
 ## 🐛 Issues or suggestions
 
@@ -28,6 +30,29 @@ As framework we use [🅱️ Bootstrap](https://getbootstrap.com) which you migh
 - The logos should have a maximum size of 300*300px.
 - PNG and JPG logos are compressed with [Trimage](https://trimage.org) which is lossless. (We can also try [Image Shrinker](https://image-shrinker.com) but apparently this is lossy, so we shouldn’t use it for any source assets.)
 - SVG images can be compressed using the also lossless scour using the command line: `scour -i filename.svg -o filename-compressed.svg --create-groups --enable-id-stripping --enable-comment-stripping --shorten-ids --remove-metadata --strip-xml-prolog --no-line-breaks;`
+
+
+## 👩‍🚀 Contributors, backers & sponsors
+
+This project exists thanks to all the **people who contribute**. 
+<a href="graphs/contributors"><img src="https://opencollective.com/opensourcediversity/contributors.svg?width=890&button=false" /></a>
+
+Thank you to **all our backers**! 🙏 ([Become a backer](https://opencollective.com/opensourcediversity#backer))
+
+<a href="https://opencollective.com/opensourcediversity#backers" target="_blank"><img src="https://opencollective.com/opensourcediversity/backers.svg?width=890"></a>
+
+**Support this project by becoming a sponsor.** Your logo will show up here with a link to your website. ([Become a sponsor](https://opencollective.com/opensourcediversity#sponsor))
+
+<a href="https://opencollective.com/opensourcediversity/sponsor/0/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/0/avatar.svg"></a>
+<a href="https://opencollective.com/opensourcediversity/sponsor/1/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/1/avatar.svg"></a>
+<a href="https://opencollective.com/opensourcediversity/sponsor/2/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/2/avatar.svg"></a>
+<a href="https://opencollective.com/opensourcediversity/sponsor/3/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/3/avatar.svg"></a>
+<a href="https://opencollective.com/opensourcediversity/sponsor/4/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/4/avatar.svg"></a>
+<a href="https://opencollective.com/opensourcediversity/sponsor/5/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/5/avatar.svg"></a>
+<a href="https://opencollective.com/opensourcediversity/sponsor/6/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/6/avatar.svg"></a>
+<a href="https://opencollective.com/opensourcediversity/sponsor/7/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/7/avatar.svg"></a>
+<a href="https://opencollective.com/opensourcediversity/sponsor/8/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/8/avatar.svg"></a>
+<a href="https://opencollective.com/opensourcediversity/sponsor/9/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/9/avatar.svg"></a>
 
 
 ## ♥ Code of Conduct
