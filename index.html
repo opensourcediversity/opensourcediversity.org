@@ -22,6 +22,7 @@
 		<meta property="twitter:title" content="Open Source Diversity">
 		<meta property="twitter:description" content="For more diversity &amp; inclusion in free &amp; open source software communities :)">
 		<meta property="twitter:image" content="img/opensourcediversity-icon.png">
+
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -68,8 +69,13 @@
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link p-2" href="https://riot.im/app/#/room/#opensourcediversity:matrix.org" target="_blank" rel="noopener" aria-label="IRC">
-								<img alt="IRC" src="img/irc.svg" />
+							<a class="nav-link p-2" href="https://discourse.opensourcediversity.org" target="_blank" rel="noopener" aria-label="Discourse forum">
+								<img alt="Discourse forum" src="img/discourse.svg" />
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link p-2" href="https://opencollective.com/opensourcediversity" target="_blank" rel="noopener" aria-label="Open Collective">
+								<img alt="Open Collective" src="img/opencollective.svg" />
 							</a>
 						</li>
 					</ul>
@@ -82,10 +88,9 @@
 				<img alt="" src="img/opensourcediversity-icon-white.svg" />
 				<h1 class="jumbotron-heading">Open Source Diversity</h1>
 				<p class="lead">For more diversity & inclusion in free & open source software communities 😊</p>
-				<!--<p>
-					<a href="#" class="btn btn-primary">Main call to action</a>
-					<a href="#" class="btn btn-secondary">Secondary action</a>
-				</p>-->
+				<p>
+					<a href="https://discourse.opensourcediversity.org/" class="btn btn-primary" target="_blank" rel="noopener"><img src="img/discourse.svg" /> Join our forum!</a>
+				</p>
 			</div>
 		</section>
 
@@ -343,6 +348,7 @@
 		<footer>
 			<div class="container text-center">
 				<p>Spread the word about Open Source Diversity and <a href="https://github.com/opensourcediversity" target="_blank" rel="noopener">contribute</a>!</p>
+				<p>Please note that Open Source Diversity has a <a href="https://github.com/opensourcediversity/opensourcediversity.org/blob/master/code-of-conduct.md" target="_blank" rel="noopener">Contributor Code of Conduct</a> based on the <a href="https://www.contributor-covenant.org" target="_blank" rel="noopener">Contributor Covenant</a>.<br>By participating in this project online or at events you agree to abide by its terms.</p>
 				<p><a href="#">♥</a></p>
 			</div>
 		</footer>
@@ -350,5 +356,11 @@
 		<script src="vendor/jquery-3.2.1.slim.min.js"></script>
 		<script src="vendor/popper.min.js"></script>
 		<script src="vendor/bootstrap.min.js"></script>
+
+		<script>
+			if('serviceWorker' in navigator) {
+			  navigator.serviceWorker.register('/service_worker.js')
+			}
+		</script>
 	</body>
 </html>
