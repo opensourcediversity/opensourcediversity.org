@@ -152,9 +152,9 @@ footer a:active {
 
 /* HOVER/FOCUS EFFECT ------------------------------------------------------- */
 
-section:not(#articles) a:hover::after,
-section:not(#articles) a:focus::after,
-section:not(#articles) a:active::after {
+section:not(.no-highlight-effect) a:hover::after,
+section:not(.no-highlight-effect) a:focus::after,
+section:not(.no-highlight-effect) a:active::after {
     content: url('../img/highlight.svg');
     position: absolute;
 	top: -3px;
