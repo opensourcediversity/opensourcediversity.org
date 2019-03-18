@@ -325,6 +325,39 @@
 		</section>
 
 		<section id="events" class="container text-center">
+            <hr/>
+            <h2>Events</h2>
+            <div class="row">
+
+                <div class=" col-md-4" id="twitter">
+                    <div class="event-box">
+                        <a class= "twitter-timeline"
+                           href="https://twitter.com/osdiversity"
+                           data-tweet-limit="1"
+                           data-link-color="#45b086">
+                            Tweets by @OpenSourceDiversity
+                        </a>
+                        <a class="twitter-follow-button"
+                           href="https://twitter.com/osdiversity"
+                           data-show-count=false>
+                            Follow @osdiversity</a>
+                    </div>
+                </div>
+
+                <a class="col-md-4">
+                    <div class= "event-box" id="open-calls">
+                    </div>
+                </a>
+
+                <a class="col-md-4">
+                    <div class= "event-box" id="meetup">
+                    </div>
+                </a> 
+
+            </div>
+        </section>
+
+		<section id="events" class="container text-center">
 			<hr/>
 			<h2>Events</h2>
 			<div class="row">
@@ -406,6 +439,22 @@
 			if('serviceWorker' in navigator) {
 			  navigator.serviceWorker.register('/service_worker.js')
 			}
+			window.twttr = (function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0],
+                    t = window.twttr || {};
+                if (d.getElementById(id)) return t;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+				 t._e = [];
+                t.ready = function(f) {
+                    t._e.push(f);
+                };
+				 return t;
+            }(document, "script", "twitter-wjs"));
 		</script>
 	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="scripts/meetupAPI.js"> </script>
 </html>

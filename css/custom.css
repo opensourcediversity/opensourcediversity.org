@@ -350,3 +350,41 @@ footer {
 .color-outreachy:active {
 	background-color: #58cfe5;
 }
+
+
+/* EVENTS ------------------------------------------------------------------ */
+.event-box {
+    border: 4px #45b086 solid;
+    border-radius: 10px;
+    height: 400px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.twitter-follow-button {
+    margin: auto;
+}
+
+.meetupInfo {
+    color: black;
+}
+
+.meetupInfo div {
+    text-align: left;
+    padding: 0px 12px;
+}
+
+.meetupInfo div b {
+    font-weight: 900;
+    margin-right: 3px;
+}
+
+#twitter a.col-md-4 {
+    display: none;
+}
+
+.twitter-follow-button {
+    margin: auto;
+}
