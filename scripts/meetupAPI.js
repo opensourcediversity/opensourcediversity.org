@@ -1,7 +1,6 @@
 function fillMeetupFields (events) {
 
     let element = document.getElementById('meetup');
-    console.log(element)
     let html = "<h3 class=\"title\"></h3><p class=\"topic\"></p><div><b>Venue:</b><span class=\"venue\"></span></div><div><b>Date:</b><span class=\"date\"></span></div></a>";
 
     for(i=0; i < events.length; i++){
