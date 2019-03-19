@@ -1,7 +1,7 @@
 function fillMeetupFields (events) {
 
     let element = document.getElementById('meetup');
-    let html = "<h3 class=\"title\"></h3><p class=\"topic\"></p><div><b>Venue:</b><span class=\"venue\"></span></div><div><b>Date:</b><span class=\"date\"></span></div></a>";
+    let html = "<h3 class=\"title\"></h3><p class=\"topic\"></p><p>Next meetup on <strong class=\"date\"></strong></br>At <strong class=\"venue\"></strong></p></a>";
 
     for(i=0; i < events.length; i++){
         let meetupInfo = document.createElement('a');
