@@ -123,14 +123,18 @@ a {
     color: rgba(255,255,255,1);
 }
 
+section a,
 section a h3,
 section a p {
 	color: #212529;
 }
+section a:hover,
 section a:hover h3,
 section a:hover p,
+section a:focus,
 section a:focus h3,
 section a:focus p,
+section a:active,
 section a:active h3,
 section a:active p {
 	color: #45b086;
@@ -286,7 +290,8 @@ h3 {
 	line-height: 130%;
 }
 
-.text-center .col-md-4 p {
+.text-center .col-md-4 p,
+.text-center .col-md-4 li {
 	text-align: left;
 }
 
@@ -349,42 +354,4 @@ footer {
 .color-outreachy:focus,
 .color-outreachy:active {
 	background-color: #58cfe5;
-}
-
-
-/* EVENTS ------------------------------------------------------------------ */
-.event-box {
-    border: 4px #45b086 solid;
-    border-radius: 10px;
-    height: 400px;
-    margin: 10px 0px;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.twitter-follow-button {
-    margin: auto;
-}
-
-.meetupInfo {
-    color: black;
-}
-
-.meetupInfo div {
-    text-align: left;
-    padding: 0px 12px;
-}
-
-.meetupInfo div b {
-    font-weight: 900;
-    margin-right: 3px;
-}
-
-#twitter a.col-md-4 {
-    display: none;
-}
-
-.twitter-follow-button {
-    margin: auto;
 }
