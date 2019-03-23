@@ -324,17 +324,48 @@
 			</div>
 		</section>
 
-		<section id="events" class="container text-center">
-			<hr/>
-			<h2>Events</h2>
-			<div class="row">
-				<a class="col-md-12" href="https://twitter.com/osdiversity" target="_blank" rel="noopener">
-					<img alt="" src="img/opensourcediversity-icon-margin.svg" />
-					<h3>To be developed</h3>
-					<p>See our Twitter account for now 🐦</p>
-				</a>
-			</div>
-		</section>
+		<section id="events" class="container text-center no-highlight-effect">
+            <hr/>
+            <h2>Events</h2>
+            <div class="row">
+                <div class=" col-md-4" id="twitter">
+					<a class= "twitter-timeline"
+					   href="https://twitter.com/osdiversity"
+					   data-tweet-limit="1"
+					   data-chrome="noheader nofooter noborders noscrollbar"
+					   data-link-color="#45b086"
+					   dnt="true">
+						Tweets by @osdiversity
+					</a>
+                </div>
+
+                <div class=" col-md-4" id="open-calls">
+					<!-- <iframe src="https://wiki.mozilla.org/Diversity_and_Inclusion_for_Communities_and_Contributors#Future_Calls"></iframe> -->
+					<h3>Monthly calls</h3>
+					<ul>
+						<li>
+							<a href="https://events.mozilla.org/opensourcemaintainerhowwomenar" target="_blank" rel="noopener">
+								March 21 2019: <strong>Open Source Maintainer -  Women will Engineer the Future</strong>
+							</a>
+						</li>
+						<li>
+							<a href="https://wiki.mozilla.org/Diversity_and_Inclusion_for_Communities_and_Contributors/DI_Call_04_04_2019" target="_blank" rel="noopener">
+								April 4, 2019: <strong>Data, Metrics, Ethics</strong>
+							</a>
+						</li>
+						<li>
+							<a href="https://wiki.mozilla.org/Diversity_and_Inclusion_for_Communities_and_Contributors#Past_Calls" target="_blank" rel="noopener">
+								Past calls on the Mozilla wiki
+							</a>
+						</li>
+					</ul>
+                </div>
+
+                <a class="col-md-4" id="meetup">
+                </a>
+
+            </div>
+        </section>
 
 		<section id="articles" class="container text-center no-highlight-effect">
 			<hr/>
@@ -398,14 +429,28 @@
 			</div>
 		</footer>
 
-		<script src="vendor/jquery-3.2.1.slim.min.js"></script>
+		<script src="vendor/jquery-3.3.1.min.js"></script>
 		<script src="vendor/popper.min.js"></script>
 		<script src="vendor/bootstrap.min.js"></script>
-
 		<script>
 			if('serviceWorker' in navigator) {
 			  navigator.serviceWorker.register('/service_worker.js')
 			}
+			window.twttr = (function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0],
+                    t = window.twttr || {};
+                if (d.getElementById(id)) return t;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+				 t._e = [];
+                t.ready = function(f) {
+                    t._e.push(f);
+                };
+				 return t;
+            }(document, "script", "twitter-wjs"));
 		</script>
+		<script src="scripts/meetupAPI.js"></script>
 	</body>
 </html>

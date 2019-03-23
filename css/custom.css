@@ -123,14 +123,18 @@ a {
     color: rgba(255,255,255,1);
 }
 
+section a,
 section a h3,
 section a p {
 	color: #212529;
 }
+section a:hover,
 section a:hover h3,
 section a:hover p,
+section a:focus,
 section a:focus h3,
 section a:focus p,
+section a:active,
 section a:active h3,
 section a:active p {
 	color: #45b086;
@@ -286,7 +290,8 @@ h3 {
 	line-height: 130%;
 }
 
-.text-center .col-md-4 p {
+.text-center .col-md-4 p,
+.text-center .col-md-4 li {
 	text-align: left;
 }
 
