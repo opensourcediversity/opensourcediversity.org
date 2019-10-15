@@ -144,6 +144,19 @@ section a:active p {
 	color: #45b086;
 }
 
+#publications ul li {
+	line-height: 130%;
+	margin-bottom: 10px;
+}
+#publications ul a {
+	font-weight: bold;
+}
+#publications ul a:hover,
+#publications ul a:focus,
+#publications ul a:active {
+	text-decoration: underline !important;
+}
+
 footer a {
 	color: #fff !important;
 	font-weight: bold;
@@ -151,7 +164,7 @@ footer a {
 footer a:hover,
 footer a:focus,
 footer a:active {
-	opacity: .8;
+	text-decoration: underline !important;
 }
 
 
