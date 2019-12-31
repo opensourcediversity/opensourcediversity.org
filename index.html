@@ -437,12 +437,11 @@
 		<script src="vendor/popper.min.js"></script>
 		<script src="vendor/bootstrap.min.js"></script>
 		<script>
-			        $(document).ready(function () {
-    		$('.first-button').on('click', function () {
-  
-			$('.animated-icon').toggleClass('open');
-    		});
-		});
+		    $(document).ready(function () {
+    			$('.first-button').on('click', function () {
+  				$('.animated-icon').toggleClass('open');
+    			});
+		    });
 			if('serviceWorker' in navigator) {
 			  navigator.serviceWorker.register('/service_worker.js')
 			}
