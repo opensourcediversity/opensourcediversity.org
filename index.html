@@ -31,8 +31,8 @@
 					<img alt="" src="img/opensourcediversity-icon-white.svg" />
 					Open Source Diversity
 				</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="animated-icon"><span></span><span></span><span></span><span></span></div>
 				</button>
 
 				<div class="collapse navbar-collapse" id="navbar">
@@ -442,6 +442,11 @@
 		<script src="vendor/popper.min.js"></script>
 		<script src="vendor/bootstrap.min.js"></script>
 		<script>
+		    $(document).ready(function () {
+    			$('.first-button').on('click', function () {
+  				$('.animated-icon').toggleClass('open');
+    			});
+		    });
 			if('serviceWorker' in navigator) {
 			  navigator.serviceWorker.register('/service_worker.js')
 			}
