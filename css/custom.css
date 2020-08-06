@@ -233,9 +233,15 @@ section:not(.no-highlight-effect) a:active::after {
 
 /* HEADER ------------------------------------------------------------------- */
 
+.navbar-brand {
+	display: flex;
+	align-items: center;
+}
+
 .navbar-brand img {
-	height: 32px;
-	vertical-align: text-bottom;
+	margin-right: 5px;
+	align-self: start;
+	height: 1.2em;
 }
 
 /* Icons for Twitter, GitHub, IRC */
