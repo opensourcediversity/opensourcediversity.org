@@ -6,10 +6,10 @@
 		<meta name="description" content="For more diversity & inclusion in free & open source software communities :)">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="vendor/bootstrap.min.css">
-		<link rel="stylesheet" href="css/custom.css">
+		<link id = "styles" rel="stylesheet" href="css/darkTheme.css">
 		<link rel="shortcut icon" href="img/opensourcediversity-icon.png">
 		<link rel="apple-touch-icon-precomposed" href="img/opensourcediversity-icon.png">
-
+		<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 		<meta property="og:type" content="object">
 		<meta property="og:site_name" content="Open Source Diversity">
 		<meta property="og:title" content="Open Source Diversity">
@@ -58,6 +58,12 @@
 						<li class="nav-item">
 							<a class="nav-link" href="#consulting">Consulting</a>
 						</li>
+						<div class="theme-switch-wrapper">
+							<label class="theme-switch" for="checkbox">
+								<input type="checkbox" id="checkbox" />
+								<div class="slider round"></div>
+						  	</label>
+						</div>
 					</ul>
 
 					<ul class="navbar-nav flex-row ml-md-auto">
@@ -372,9 +378,6 @@
 					</ul>
                 </div>
 
-                <a class="col-md-4" id="meetup">
-                </a>
-
             </div>
         </section>
 
@@ -474,6 +477,33 @@
                 };
 				 return t;
             }(document, "script", "twitter-wjs"));
+
+			function switchTheme(e) {
+				if (e.target.checked) {
+					document.getElementById("styles").setAttribute('href', 'css/darkTheme.css');
+					localStorage.setItem('theme', 'dark'); 
+				}
+				else {
+					document.getElementById("styles").setAttribute('href', 'css/lightTheme.css');
+					localStorage.setItem('theme', 'light');
+				}    
+			}
+
+			document.addEventListener('DOMContentLoaded', () => {
+				const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+				toggleSwitch.addEventListener('change', switchTheme, false);
+				const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+
+				if (currentTheme === 'dark') {
+					document.getElementById("styles").setAttribute('href', 'css/darkTheme.css');
+					toggleSwitch.checked = true;
+				}
+				else {
+					document.getElementById("styles").setAttribute('href', 'css/lightTheme.css');
+					toggleSwitch.checked = false;
+				}
+			})
+			
 		</script>
 		<script src="scripts/meetupAPI.js"></script>
 	</body>

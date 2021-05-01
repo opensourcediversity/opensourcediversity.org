@@ -1,0 +1,493 @@
+/* TYPOGRAPHY --------------------------------------------------------------- */
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    /* normal */
+    src: local('Nunito Regular'), local('Nunito-Regular'), url('Nunito-Regular-latin-ext.woff2') format('woff2'), url('Nunito-Regular.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    /* normal */
+    src: local('Nunito Regular'), local('Nunito-Regular'), url('Nunito-Regular.woff2') format('woff2'), url('Nunito-Regular.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    /* bold */
+    src: local('Nunito Bold'), local('Nunito-Bold'), url('Nunito-Bold-latin-ext.woff2') format('woff2'), url('Nunito-Bold.ttf') format('truetype');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+/* latin */
+
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    /* bold */
+    src: local('Nunito Bold'), local('Nunito-Bold'), url('Nunito-Bold.woff2') format('woff2'), url('Nunito-Bold.ttf') format('truetype');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+    font-weight: normal;
+    line-height: 170%;
+    background-color: #212529;
+    color: #fff;
+}
+
+.navbar-brand,
+h1,
+h2,
+h3 {
+    font-weight: bold;
+}
+
+
+/* COLOR -------------------------------------------------------------------- */
+
+.navbar,
+.jumbotron,
+footer {
+    background-color: #202124 !important;
+    color: #fff;
+    border-radius: 0;
+    /* better readability on bright background */
+    text-shadow: 0 0 2px rgba(10, 30, 20, .4);
+}
+
+
+/* BUTTONS ------------------------------------------------------------------ */
+
+.btn {
+    border-radius: 100px;
+}
+
+.btn img {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: sub;
+}
+
+.jumbotron .btn {
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: bold;
+}
+
+.jumbotron .btn:hover,
+.jumbotron .btn:focus,
+.jumbotron .btn:active {
+    background: #fff;
+    color: #212529;
+}
+
+.jumbotron .btn:hover img,
+.jumbotron .btn:focus img,
+.jumbotron .btn:active img {
+    filter: invert(80%);
+}
+
+
+/* LINKS -------------------------------------------------------------------- */
+
+a {
+    text-decoration: none !important;
+    outline: none !important;
+    color: #fff;
+    transition: transform .2s;
+    /* Animation */
+}
+
+a:hover {
+    color: #fff;
+    box-shadow: 0 0 0.25em 0.25em rgba(134, 128, 128, 0.25);
+    transform: scale(1.05);
+}
+
+footer a {
+    color: #fff !important;
+    font-weight: bold;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+    opacity: .8;
+}
+
+
+/* HOVER/FOCUS EFFECT ------------------------------------------------------- */
+
+section:not(.no-highlight-effect) div > a:hover::after,
+section:not(.no-highlight-effect) div > a:focus::after,
+section:not(.no-highlight-effect) div > a:active::after {
+    content: url('../img/highlight-white.svg');
+    position: absolute;
+    top: -3px;
+    left: calc(50% - 128px);
+}
+
+.nav-item,
+.navbar-brand,
+.navbar-toggler {
+    position: relative;
+}
+
+.nav-link:hover::before,
+.navbar-toggler:hover::before {
+    content: url('../img/highlight-white-small-left.svg');
+    position: absolute;
+    top: 2px;
+    left: -10px;
+}
+
+.nav-link:hover::after,
+.navbar-toggler:hover::after {
+    content: url('../img/highlight-white-small-right.svg');
+    position: absolute;
+    top: 2px;
+    right: -8px;
+}
+
+
+/* Special case for the logo */
+
+.navbar-brand:focus::before,
+.navbar-brand:hover::before,
+.navbar-brand:active::before {
+    left: -25px;
+}
+
+.navbar-brand:focus::after,
+.navbar-brand:hover::after,
+.navbar-brand:active::after {
+    right: -20px;
+}
+
+
+/* Special case for the mobile nav entries */
+
+.navbar-collapse.show .mr-auto .nav-link:focus::before,
+.navbar-collapse.show .mr-auto .nav-link:hover::before,
+.navbar-collapse.show .mr-auto .nav-link:active::before {
+    left: -20px;
+}
+
+.navbar-collapse.show .mr-auto .nav-link:focus::after,
+.navbar-collapse.show .mr-auto .nav-link:hover::after,
+.navbar-collapse.show .mr-auto .nav-link:active::after {
+    left: 65px;
+}
+
+
+/* HEADER ------------------------------------------------------------------- */
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 5px;
+    align-self: start;
+    height: 1.2em;
+}
+
+
+/* Icons for Twitter, GitHub, IRC */
+
+.nav-link img {
+    width: 1rem;
+    height: 1rem;
+    opacity: .6;
+}
+
+.nav-link:hover img,
+.nav-link:focus img {
+    opacity: 1;
+}
+
+
+/* Toggle icon on mobile */
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none !important;
+}
+
+
+/* CONTENT ------------------------------------------------------------------ */
+
+section {
+    padding-top: 32px;
+}
+
+h2 {
+    display: inline-block;
+    background-color: #fff;
+    color: #202124 !important;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
+}
+
+hr {
+    border: 2px solid #fff !important;
+    border-radius: 3px;
+    margin-bottom: -4.4rem;
+    margin-top: 5rem;
+}
+
+[class^='col-md-'],
+[class*=' col-md-'] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    margin-top: 1rem;
+    line-height: 130%;
+}
+
+.text-center .col-md-4 p,
+.text-center .col-md-4 li {
+    text-align: left;
+}
+
+.container .row img {
+    width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+
+/* LOGO --------------------------------------------------------------------- */
+
+.jumbotron .container>img {
+    margin: 60px 0 10px 0;
+}
+
+
+/* FOOTER ------------------------------------------------------------------- */
+
+footer {
+    margin-top: 4rem;
+    padding: 2rem 0;
+}
+
+
+/* EXPERIMENTS -------------------------------------------------------------- */
+
+[class^='color-'],
+[class*='color-'] {
+    border: none;
+}
+
+.color-heartofcode,
+.color-heartofcode:hover,
+.color-heartofcode:focus,
+.color-heartofcode:active {
+    background-color: #c32025;
+}
+
+.color-lereset,
+.color-lereset:hover,
+.color-lereset:focus,
+.color-lereset:active {
+    background-color: #feed64;
+    color: #444444;
+}
+
+.color-doubleunion,
+.color-doubleunion:hover,
+.color-doubleunion:focus,
+.color-doubleunion:active {
+    background-color: #d12aa4;
+}
+
+.color-railsgirls,
+.color-railsgirls:hover,
+.color-railsgirls:focus,
+.color-railsgirls:active {
+    background-color: #d82222;
+}
+
+.color-outreachy,
+.color-outreachy:hover,
+.color-outreachy:focus,
+.color-outreachy:active {
+    background-color: #58cfe5;
+}
+
+
+/* ---------------------------Animated Hamburger Menu--------------------- */
+
+.animated-icon {
+    width: 30px;
+    height: 20px;
+    position: relative;
+    margin: 0px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.animated-icon span {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+.animated-icon span {
+    background: #e3f2fd;
+}
+
+.animated-icon span:nth-child(1) {
+    top: 0px;
+}
+
+.animated-icon span:nth-child(2),
+.animated-icon span:nth-child(3) {
+    top: 10px;
+}
+
+.animated-icon span:nth-child(4) {
+    top: 20px;
+}
+
+.animated-icon.open span:nth-child(1) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+.animated-icon.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.animated-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.animated-icon.open span:nth-child(4) {
+    top: 11px;
+    width: 0%;
+    left: 50%;
+}
+
+
+/*Simple css to style it like a toggle switch*/
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+em {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: blue;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

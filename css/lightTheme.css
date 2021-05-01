@@ -116,8 +116,17 @@ footer {
 /* LINKS -------------------------------------------------------------------- */
 
 a {
-	text-decoration: none !important;
-	outline: none !important;
+    text-decoration: none !important;
+    outline: none !important;
+    color: #fff;
+    transition: transform .2s;
+    /* Animation */
+}
+
+a:hover {
+    color: #45b086;
+    box-shadow: 0 0 0.25em 0.25em rgba(134, 128, 128, 0.25);
+    transform: scale(1.05);
 }
 
 .navbar-dark .navbar-nav .nav-link,
@@ -160,13 +169,13 @@ footer a:active {
 
 /* HOVER/FOCUS EFFECT ------------------------------------------------------- */
 
-section:not(.no-highlight-effect) a:hover::after,
-section:not(.no-highlight-effect) a:focus::after,
-section:not(.no-highlight-effect) a:active::after {
+section:not(.no-highlight-effect) div > a:hover::after,
+section:not(.no-highlight-effect) div > a:focus::after,
+section:not(.no-highlight-effect) div > a:active::after {
     content: url('../img/highlight.svg');
     position: absolute;
-	top: -3px;
-	left: calc(50% - 128px);
+    top: -3px;
+    left: calc(50% - 128px);
 }
 
 .nav-item,
@@ -175,33 +184,22 @@ section:not(.no-highlight-effect) a:active::after {
 	position: relative;
 }
 
-.nav-link:focus::before,
 .nav-link:hover::before,
-.nav-link:active::before,
-.navbar-brand:focus::before,
-.navbar-brand:hover::before,
-.navbar-brand:active::before,
-.navbar-toggler:focus::before,
 .navbar-toggler:hover::before {
-	content: url('../img/highlight-white-small-left.svg');
-	position: absolute;
-	top: 2px;
-	left: -10px;
+    content: url('../img/highlight-white-small-left.svg');
+    position: absolute;
+    top: 2px;
+    left: -10px;
 }
 
-.nav-link:focus::after,
 .nav-link:hover::after,
-.nav-link:active::after,
-.navbar-brand:focus::after,
-.navbar-brand:hover::after,
-.navbar-brand:active::after,
-.navbar-toggler:focus::after,
 .navbar-toggler:hover::after {
-	content: url('../img/highlight-white-small-right.svg');
-	position: absolute;
-	top: 2px;
-	right: -8px;
+    content: url('../img/highlight-white-small-right.svg');
+    position: absolute;
+    top: 2px;
+    right: -8px;
 }
+
 
 /* Special case for the logo */
 .navbar-brand:focus::before,
@@ -441,4 +439,64 @@ footer {
     top: 11px;
     width: 0%;
     left: 50%;
+}
+/*Simple css to style it like a toggle switch*/
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+em {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: blue;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
