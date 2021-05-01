@@ -434,6 +434,7 @@ footer {
 /*Simple css to style it like a toggle switch*/
 
 .theme-switch-wrapper {
+    margin-left: 5px;
     display: flex;
     align-items: center;
 }
@@ -474,10 +475,13 @@ em {
     position: absolute;
     transition: .4s;
     width: 26px;
+    background-image: url("../img/moon.png");
+	background-position: center; 
+	background-repeat: no-repeat;
 }
 
 input:checked+.slider {
-    background-color: blue;
+    background-color: #3b3b3b;
 }
 
 input:checked+.slider:before {
