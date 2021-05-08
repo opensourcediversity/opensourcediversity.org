@@ -1,0 +1,3 @@
+tasks:
+  - command: npx browser-sync start -s -w
+    name: Server
