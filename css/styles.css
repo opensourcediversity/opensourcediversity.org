@@ -44,135 +44,180 @@
 	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-html{
-	scroll-behavior: smooth;
+:root {
+    --white: #fff;
+    --lightGreen: #45b086;
+    --darkGrey: #202124;
+    --lightGrey: #212529;
+    --textShadow: 0 0 2px rgba(10, 30, 20, .4);
+    --boxShadow: 0 0 0.25em 0.25em rgba(134, 128, 128, 0.25);
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --Theme: var(--darkGrey);
+    }
+
+    body {
+        background-color: var(--lightGrey);
+        color: var(--white);
+    }
+
+    a:hover {
+        color: var(--white);
+    }
+
+    section:not(.no-highlight-effect) div > a:hover::after,
+    section:not(.no-highlight-effect) div > a:focus::after,
+    section:not(.no-highlight-effect) div > a:active::after {
+        content: url('../img/highlight-white.svg');
+    }
+
+    hr {
+        border: 2px solid var(--white) !important;
+    }
+
+    .jumbotron-heading {
+        color: var(--lightGreen);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --Theme: var(--lightGreen);
+    }
+
+    a:hover {
+        color: var(--Theme);
+    }
+
+    .navbar-dark .navbar-nav .nav-link,
+    .navbar-dark .navbar-nav .nav-link:hover,
+    .navbar-dark .navbar-nav .nav-link:focus,
+    .navbar-dark .navbar-nav .nav-link:active {
+        color: rgba(255,255,255,1);
+    }
+
+    section a,
+    section a h3,
+    section a p {
+        color: var(--lightGrey);
+    }
+
+    section a:hover,
+    section a:hover h3,
+    section a:hover p,
+    section a:focus,
+    section a:focus h3,
+    section a:focus p,
+    section a:active,
+    section a:active h3,
+    section a:active p {
+        color: var(--lightGreen);
+    }
+
+    section:not(.no-highlight-effect) div > a:hover::after,
+    section:not(.no-highlight-effect) div > a:focus::after,
+    section:not(.no-highlight-effect) div > a:active::after {
+        content: url('../img/highlight.svg');
+    }
+
+    hr {
+        border: 2px solid var(--lightGreen) !important;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
-	font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
-	font-weight: normal;
-	line-height: 170%;
+    font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
+    font-weight: normal;
+    line-height: 170%;
 }
 
 .navbar-brand,
 h1,
 h2,
 h3 {
-	font-weight: bold;
+    font-weight: bold;
 }
-
-
-
-
 
 /* COLOR -------------------------------------------------------------------- */
 
 .navbar,
 .jumbotron,
 footer {
-	background-color: #45b086 !important;
-	color: #fff;
-	border-radius: 0;
-	/* better readability on bright background */
-	text-shadow: 0 0 2px rgba(10, 30, 20, .4);
+    background-color: var(--Theme) !important;
+    color: var(--white);
+    border-radius: 0;
+    /* better readability on bright background */
+    text-shadow: var(--textShadow);
 }
-
-
-
-
 
 /* BUTTONS ------------------------------------------------------------------ */
 
 .btn {
-	border-radius: 100px;
+    border-radius: 100px;
 }
+
 .btn img {
-	width: 1rem;
-	height: 1rem;
-	vertical-align: sub;
+    width: 1rem;
+    height: 1rem;
+    vertical-align: sub;
 }
+
 .jumbotron .btn {
-	background: transparent;
-	color: #fff;
-	border: 2px solid #fff;
-	font-weight: bold;
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    font-weight: bold;
 }
+
 .jumbotron .btn:hover,
 .jumbotron .btn:focus,
 .jumbotron .btn:active {
-	background: #fff;
-	color: #212529;
+    background: var(--white);
+    color: var(--lightGrey);
 }
+
 .jumbotron .btn:hover img,
 .jumbotron .btn:focus img,
 .jumbotron .btn:active img {
-	filter: invert(80%);
+    filter: invert(80%);
 }
-
-
-
-
 
 /* LINKS -------------------------------------------------------------------- */
 
 a {
     text-decoration: none !important;
     outline: none !important;
-    color: #fff;
+    color: var(--white);
     transition: transform .2s;
     /* Animation */
 }
 
 a:hover {
-    color: #45b086;
-    box-shadow: 0 0 0.25em 0.25em rgba(134, 128, 128, 0.25);
+    box-shadow: var(--boxShadow);
     transform: scale(1.05);
 }
 
-.navbar-dark .navbar-nav .nav-link,
-.navbar-dark .navbar-nav .nav-link:hover,
-.navbar-dark .navbar-nav .nav-link:focus,
-.navbar-dark .navbar-nav .nav-link:active {
-    color: rgba(255,255,255,1);
-}
-
-section a,
-section a h3,
-section a p {
-	color: #212529;
-}
-section a:hover,
-section a:hover h3,
-section a:hover p,
-section a:focus,
-section a:focus h3,
-section a:focus p,
-section a:active,
-section a:active h3,
-section a:active p {
-	color: #45b086;
-}
-
 footer a {
-	color: #fff !important;
-	font-weight: bold;
+    color: var(--white) !important;
+    font-weight: bold;
 }
+
 footer a:hover,
 footer a:focus,
 footer a:active {
-	opacity: .8;
+    opacity: .8;
 }
-
-
-
-
-
-/* HOVER/FOCUS EFFECT ------------------------------------------------------- */
 
 section:not(.no-highlight-effect) div > a:hover::after,
 section:not(.no-highlight-effect) div > a:focus::after,
 section:not(.no-highlight-effect) div > a:active::after {
-    content: url('../img/highlight.svg');
     position: absolute;
     top: -3px;
     left: calc(50% - 128px);
@@ -181,7 +226,7 @@ section:not(.no-highlight-effect) div > a:active::after {
 .nav-item,
 .navbar-brand,
 .navbar-toggler {
-	position: relative;
+    position: relative;
 }
 
 .nav-link:hover::before,
@@ -205,88 +250,82 @@ section:not(.no-highlight-effect) div > a:active::after {
 .navbar-brand:focus::before,
 .navbar-brand:hover::before,
 .navbar-brand:active::before {
-	left: -25px;
+    left: -25px;
 }
+
 .navbar-brand:focus::after,
 .navbar-brand:hover::after,
 .navbar-brand:active::after {
-	right: -20px;
+    right: -20px;
 }
 
 /* Special case for the mobile nav entries */
 .navbar-collapse.show .mr-auto .nav-link:focus::before,
 .navbar-collapse.show .mr-auto .nav-link:hover::before,
 .navbar-collapse.show .mr-auto .nav-link:active::before {
-	left: -20px;
+    left: -20px;
 }
+
 .navbar-collapse.show .mr-auto .nav-link:focus::after,
 .navbar-collapse.show .mr-auto .nav-link:hover::after,
 .navbar-collapse.show .mr-auto .nav-link:active::after {
-	left: 65px;
+    left: 65px;
 }
 
-
-
-
-
 /* HEADER ------------------------------------------------------------------- */
-
 .navbar-brand {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-brand img {
-	margin-right: 5px;
-	align-self: start;
-	height: 1.2em;
+    margin-right: 5px;
+    align-self: start;
+    height: 1.2em;
 }
 
 /* Icons for Twitter, GitHub, IRC */
 .nav-link img {
     width: 1rem;
     height: 1rem;
-	opacity: .6;
+    opacity: .6;
 }
+
 .nav-link:hover img,
 .nav-link:focus img {
-	opacity: 1;
+    opacity: 1;
 }
 
 /* Toggle icon on mobile */
 .navbar-dark .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+
 .navbar-toggler {
-	border: none;
-	outline: none !important;
+    border: none;
+    outline: none !important;
 }
-
-
-
-
 
 /* CONTENT ------------------------------------------------------------------ */
-
 section {
-	padding-top: 32px;
+    padding-top: 32px;
 }
 
 h2 {
-	display: inline-block;
-	background-color: #fff;
-	color: #45b086 !important;
-	text-align: center;
-	padding: 16px;
-	margin-top: 32px;
+    display: inline-block;
+    background-color: var(--white);
+    color: var(--Theme) !important;
+    text-align: center;
+    padding: 16px;
+    margin-top: 32px;
 }
 
 hr {
-	border: 2px solid #45b086 !important;
-	border-radius: 3px;
-	margin-bottom: -4.4rem;
-	margin-top: 5rem;
+    border-radius: 3px;
+    margin-bottom: -4.4rem;
+    margin-top: 5rem;
 }
+
 
 [class^='col-md-'], [class*=' col-md-'] {
     margin-top: 20px;
@@ -310,24 +349,18 @@ h3 {
 	margin-top: 20px;
 }
 
-
 /* LOGO --------------------------------------------------------------------- */
-
 .jumbotron .container > img {
     margin: 60px 0 10px 0;
 }
 
-
 /* FOOTER ------------------------------------------------------------------- */
-
 footer {
 	margin-top: 4rem;
 	padding: 2rem 0;
 }
 
-
 /* EXPERIMENTS -------------------------------------------------------------- */
-
 [class^='color-'], [class*='color-']  {
 	border: none;
 }
@@ -439,68 +472,4 @@ footer {
     top: 11px;
     width: 0%;
     left: 50%;
-}
-/*Simple css to style it like a toggle switch*/
-
-.theme-switch-wrapper {
-	margin-left: 5px;
-    display: flex;
-    align-items: center;
-}
-
-em {
-    margin-left: 10px;
-    font-size: 1rem;
-}
-
-.theme-switch {
-    display: inline-block;
-    height: 34px;
-    position: relative;
-    width: 60px;
-}
-
-.theme-switch input {
-    display: none;
-}
-
-.slider {
-    background-color: #ccc;
-    bottom: 0;
-    cursor: pointer;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: .4s;
-}
-
-.slider:before {
-    background-color: #fff;
-    bottom: 4px;
-    content: "";
-    height: 26px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
-	background-image: url("../img/moon.png");
-	background-position: center; 
-	background-repeat: no-repeat;
-}
-
-input:checked+.slider {
-    background-color: blue;
-}
-
-input:checked+.slider:before {
-    transform: translateX(26px);
-}
-
-.slider.round {
-    border-radius: 34px;
-}
-
-.slider.round:before {
-    border-radius: 50%;
 }
