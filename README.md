@@ -2,7 +2,7 @@
 
 **For more diversity & inclusion in free & open source software communities 😊**
 
-[![Backers on Open Collective](https://opencollective.com/opensourcediversity/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/opensourcediversity/sponsors/badge.svg)](#sponsors) 
+[![Backers on Open Collective](https://opencollective.com/opensourcediversity/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/opensourcediversity/sponsors/badge.svg)](#sponsors) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-45b086?logo=gitpod)](https://gitpod.io/#https://github.com/opensourcediversity/opensourcediversity.org)
 
 
 ## 🐛 Issues or suggestions
@@ -12,7 +12,13 @@ If you found an issue on the page or only have a quick suggestion (for example a
 
 ## 👩‍💻 Contribute code or design
 
-Contributing to this page is very easy!
+You can [open this repository using Gitpod](https://gitpod.io/#https://github.com/opensourcediversity/opensourcediversity.org) and edit it there. Gitpod sets everything up, and you get an IDE as well as an instant preview of your changes!
+![](img/gitpod.png)
+
+
+### More advanced version
+
+If you want to set up a local development environment instead, there are only a few steps either:
 
 1. **💻 Clone this repository** using [GitHub Desktop](https://desktop.github.com) (you can also use the command line)
 2. **🌐 Simply open the `index.html`** in [your browser](https://www.mozilla.org/firefox/) (no web server required since it’s all client-side :)
