@@ -109,7 +109,19 @@ footer {
 	filter: invert(80%);
 }
 
-
+.back-to-top-btn{
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	font-weight: bold;
+}
+.back-to-top-btn:hover,
+.back-to-top-btn:focus,
+.back-to-top-btn:hover{
+	background: #fff;
+	color: green;
+	border-color: #fff;
+}
 
 
 
@@ -321,8 +333,15 @@ footer {
 	margin-top: 4rem;
 	padding: 2rem 0;
 }
-
-
+.footer-logo{
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+}
+.footer-txt{
+	font-weight: bold;
+	text-align: center;
+}
 /* EXPERIMENTS -------------------------------------------------------------- */
 
 [class^='color-'], [class*='color-']  {
