@@ -63,7 +63,7 @@ Thank you to **all our backers**! 🙏 ([Become a backer](https://opencollective
 
 ## ♥ Code of Conduct
 
-Please note that Open Source Diversity has a [Contributor Code of Conduct](https://github.com/opensourcediversity/opensourcediversity.org/blob/master/code-of-conduct.md) based on the [Contributor Covenant](https://www.contributor-covenant.org). By participating in this project online or at events you agree to abide by its terms.
+Please note that Open Source Diversity has a [Contributor Code of Conduct](https://github.com/opensourcediversity/opensourcediversity.org/blob/main/.github/CODE_OF_CONDUCT.md) based on the [Contributor Covenant](https://www.contributor-covenant.org). By participating in this project online or at events you agree to abide by its terms.
 
 
 ## 📜 License
