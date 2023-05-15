@@ -31,9 +31,16 @@
 					<img alt="White Flower Icon of Open Source Diversity" title="White Flower Icon" src="img/opensourcediversity-icon-white.svg" />
 					Open Source Diversity
 				</a>
-				<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"></button>
-					<div class="animated-icon"><span></span></div>
-				
+				<button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="screen-reader-text">Menu</span>
+					<svg class="icon icon-menu-toggle" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100">
+						<g class="svg-menu-toggle">
+							<path class="line line-1" d="M5 13h90v14H5z"/>
+							<path class="line line-2" d="M5 43h90v14H5z"/>
+							<path class="line line-3" d="M5 73h90v14H5z"/>
+						</g>
+					</svg>
+				</button>
 
 				<div class="collapse navbar-collapse" id="navbar">
 					<ul class="navbar-nav mr-auto">
@@ -192,8 +199,8 @@
 					<p>Mozilla's initiative to help teach machines how real people speak.</p>
 				</a>
 				<a class="col-sm-6 col-md-4 p-4" href="https://chaoss.community/metrics/" target="_blank" rel="noopener">
-					<img alt="Chaoss Diversity and Inclusion Workgroup image link" title="Chaoss D&I Workgroup" src="img/projects/chaoss.jpg" />
-					<h3>CHAOSS D&I Workgroup</h3>
+					<img alt="Chaoss Diversity and Inclusion Workgroup image link" title="Chaoss D&amp;I Workgroup" src="img/projects/chaoss.jpg" />
+					<h3>CHAOSS D&amp;I Workgroup</h3>
 					<p>Collection of resources for projects to create a diversity and inclusion report.</p>
 				</a>
 				<a class="col-sm-6 col-md-4 p-4" href="https://drnikki.github.io/open-demographics/" target="_blank" rel="noopener">
@@ -359,7 +366,7 @@
 					   data-tweet-limit="1"
 					   data-chrome="noheader nofooter noborders noscrollbar"
 					   data-link-color="#45b086"
-					   dnt="true">
+					   >
 						Tweets by @osdiversity
 					</a>
                 </div>
@@ -477,7 +484,7 @@
 		<script>
 		    $(document).ready(function () {
     			$('.first-button').on('click', function () {
-  				$('.animated-icon').toggleClass('open');
+  				$('.icon-menu-toggle').toggleClass('open');
     			});
 		    });
 			if('serviceWorker' in navigator) {
