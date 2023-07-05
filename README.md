@@ -4,17 +4,14 @@
 
 [![Backers on Open Collective](https://opencollective.com/opensourcediversity/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/opensourcediversity/sponsors/badge.svg)](#sponsors) [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-45b086?logo=gitpod)](https://gitpod.io/#https://github.com/opensourcediversity/opensourcediversity.org)
 
-
 ## 🐛 Issues or suggestions
 
 If you found an issue on the page or only have a quick suggestion (for example a project to add), please open a new issue in [our issue list](https://github.com/opensourcediversity/opensourcediversity.org/issues). Thank you! 👍
-
 
 ## 👩‍💻 Contribute code or design
 
 You can [open this repository using Gitpod](https://gitpod.io/#https://github.com/opensourcediversity/opensourcediversity.org) and edit it there. Gitpod sets everything up, and you get an IDE as well as an instant preview of your changes!
 ![](img/gitpod.png)
-
 
 ### More advanced version
 
@@ -29,19 +26,17 @@ And that’s it! 🎉 Contributing to other open source projects is very similar
 
 As framework we use [🅱️ Bootstrap](https://getbootstrap.com) which you might already be familiar with. It’s very popular, so even if you don’t know it yet, learning about it will help you with lots of other projects too! 😊
 
-
 ## 📐 Project logos
 
 - A good source for logos is their website or Twitter picture. SVG is preferred as the file size is usually smaller and it scales.
-- The logos should have a maximum size of 300*300px.
+- The logos should have a maximum size of 300\*300px.
 - PNG and JPG logos are compressed with [Trimage](https://trimage.org) which is lossless. (We can also try [Image Shrinker](https://image-shrinker.com) but apparently this is lossy, so we shouldn’t use it for any source assets.)
 - SVG images can be compressed using the also lossless scour using the command line: `scour -i filename.svg -o filename-compressed.svg --create-groups --enable-id-stripping --enable-comment-stripping --shorten-ids --remove-metadata --strip-xml-prolog --no-line-breaks;`
 
-
 ## 👩‍🚀 Contributors, backers & sponsors
 
-This project exists thanks to all the **people who contribute**. 
-<a href="graphs/contributors"><img src="https://opencollective.com/opensourcediversity/contributors.svg?width=890" /></a>
+This project exists thanks to all the **people who contribute**.
+<a href="https://opencollective.com/opensourcediversity#contributors" target="_blank"><img src="https://opencollective.com/opensourcediversity/contributors.svg?width=890" /></a>
 
 Thank you to **all our backers**! 🙏 ([Become a backer](https://opencollective.com/opensourcediversity#backer))
 
@@ -60,11 +55,9 @@ Thank you to **all our backers**! 🙏 ([Become a backer](https://opencollective
 <a href="https://opencollective.com/opensourcediversity/sponsor/8/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/8/avatar.svg"></a>
 <a href="https://opencollective.com/opensourcediversity/sponsor/9/website" target="_blank"><img src="https://opencollective.com/opensourcediversity/sponsor/9/avatar.svg"></a>
 
-
 ## ♥ Code of Conduct
 
 Please note that Open Source Diversity has a [Contributor Code of Conduct](https://github.com/opensourcediversity/opensourcediversity.org/blob/main/.github/CODE_OF_CONDUCT.md) based on the [Contributor Covenant](https://www.contributor-covenant.org). By participating in this project online or at events you agree to abide by its terms.
-
 
 ## 📜 License
 
@@ -72,13 +65,11 @@ Please note that Open Source Diversity has a [Contributor Code of Conduct](https
 - 🎨 Logo by [Elio Qoshi](https://elioqoshi.me) of [Ura Design](https://ura.design) & [Open Source Design](https://opensourcedesign.net)
 - 📄 [Nunito typeface](https://github.com/vernnobile/NunitoFont) by [Vernon Adams](http://sansoxygen.com)
 
-
 ## 🎉 Promotional material
 
 Open Source Diversity promotional material like logos, banners, stickers and presentation slides is all in the [`promo` folder](https://github.com/opensourcediversity/opensourcediversity.org/tree/master/promo). Everyone is welcome to print material and present Open Source Diversity at events – permission is not needed, everyone in the community can help! 😊
 
 If you do print banners or stickers, best try to get organizations to sponsor it. If that doesn’t work, you can use our [Open Collective](https://opencollective.com/opensourcediversity) to reimburse the costs. Ideally drop a short note in [our forum](https://discourse.opensourcediversity.org) about your plans of what to print and for which event as we have very limited funds. 🙂
-
 
 ### 🌼 Logo
 
@@ -88,23 +79,17 @@ The logo is `#fff` white on `#45b086` green/turquoise. If you need the logo on w
 
 As typeface we use [Nunito](https://github.com/opensourcediversity/opensourcediversity.org/tree/master/css) in Regular and Bold, without other weights nor italic styles.
 
-
-
 ### 🖼 Banner
 
 If you write a Tweet, Mastodon toot or other kind of post and need a bigger banner, use this:
 
 ![](promo/banner-website.png)
 
-
-
 ### ⭕ Stickers
 
 <img src="promo/sticker-mockup.png" width="200px" />
 
 We usually order [Flyeralarm outdoor stickers](https://www.flyeralarm.com/de/shop/configurator/index/quantity/7983970#159=601&160=602&161=615&162=585), 4.5 cm round. If you want to order some, use the file [`sticker-45mm.jpg`](https://raw.githubusercontent.com/opensourcediversity/opensourcediversity.org/master/promo/sticker-45mm.jpg) for printing.
-
-
 
 ### 📺 Presentation
 
