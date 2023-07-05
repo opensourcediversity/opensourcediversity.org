@@ -1,0 +1,16 @@
+name: Tidy HTML Lint
+
+on: pull_request
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Install Tidy
+        run: sudo apt-get install -y tidy
+
+      - name: Lint HTML
+        run: tidy -q -errors -utf8 index.html
