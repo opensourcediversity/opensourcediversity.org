@@ -41,7 +41,7 @@ As framework we use [🅱️ Bootstrap](https://getbootstrap.com) which you migh
 ## 👩‍🚀 Contributors, backers & sponsors
 
 This project exists thanks to all the **people who contribute**. 
-<a href="graphs/contributors"><img src="https://opencollective.com/opensourcediversity/contributors.svg?width=890" /></a>
+<a href="https://opencollective.com/opensourcediversity#contributors" target="_blank"><img src="https://opencollective.com/opensourcediversity/contributors.svg?width=890" /></a>
 
 Thank you to **all our backers**! 🙏 ([Become a backer](https://opencollective.com/opensourcediversity#backer))
 
