@@ -364,80 +364,51 @@ footer {
 .color-outreachy:active {
 	background-color: #58cfe5;
 }
+/* ---------------------------Text meant only for screen readers--------------------------- */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
 /* ---------------------------Animated Hamburger Menu--------------------- */
-.animated-icon {
-    width: 30px;
-    height: 20px;
-    position: relative;
-    margin: 0px;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    cursor: pointer;
+.navbar-toggler {
+	cursor: pointer;
 }
 
-.animated-icon span {
-    display: block;
-    position: absolute;
-    height: 3px;
-    width: 100%;
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .25s ease-in-out;
-    -moz-transition: .25s ease-in-out;
-    -o-transition: .25s ease-in-out;
-    transition: .25s ease-in-out;
+.icon-menu-toggle {
+	width: 1.2em;
+	height: 1.6em;
+	vertical-align: middle;
+	position: relative;
+	margin: 0px;
+	fill: #ffffff;
 }
 
-.animated-icon span {
-    background: #e3f2fd;
+.svg-menu-toggle .line {
+	opacity: 1;
+	transform: rotate(0) translateY(0) translateX(0);
+	transform-origin: 1em 1em;
+	transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-
-.animated-icon span:nth-child(1) {
-    top: 0px;
+.svg-menu-toggle .line-1 {
+	transform-origin: 1em 2.5em;
 }
 
-.animated-icon span:nth-child(2), .animated-icon span:nth-child(3) {
-    top: 10px;
+.svg-menu-toggle .line-3 {
+	transform-origin: 1em 2.5em;
 }
 
-.animated-icon span:nth-child(4) {
-    top: 20px;
+.icon-menu-toggle.open .svg-menu-toggle .line-1 {
+	transform: rotate(45deg) translateY(0) translateX(0);
 }
 
-.animated-icon.open span:nth-child(1) {
-    top: 11px;
-    width: 0%;
-    left: 50%;
+.icon-menu-toggle.open .svg-menu-toggle .line-2 {
+	opacity: 0;
 }
 
-.animated-icon.open span:nth-child(2) {
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
-
-.animated-icon.open span:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-}
-
-.animated-icon.open span:nth-child(4) {
-    top: 11px;
-    width: 0%;
-    left: 50%;
+.icon-menu-toggle.open .svg-menu-toggle .line-3 {
+	transform: rotate(-45deg) translateY(0) translateX(0);
 }

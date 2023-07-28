@@ -41,7 +41,7 @@ As framework we use [🅱️ Bootstrap](https://getbootstrap.com) which you migh
 ## 👩‍🚀 Contributors, backers & sponsors
 
 This project exists thanks to all the **people who contribute**. 
-<a href="graphs/contributors"><img src="https://opencollective.com/opensourcediversity/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/opensourcediversity/opensourcediversity.org/graphs/contributors"><img src="https://opencollective.com/opensourcediversity/contributors.svg?width=890" /></a>
 
 Thank you to **all our backers**! 🙏 ([Become a backer](https://opencollective.com/opensourcediversity#backer))
 
@@ -63,7 +63,7 @@ Thank you to **all our backers**! 🙏 ([Become a backer](https://opencollective
 
 ## ♥ Code of Conduct
 
-Please note that Open Source Diversity has a [Contributor Code of Conduct](https://github.com/opensourcediversity/opensourcediversity.org/blob/master/code-of-conduct.md) based on the [Contributor Covenant](https://www.contributor-covenant.org). By participating in this project online or at events you agree to abide by its terms.
+Please note that Open Source Diversity has a [Contributor Code of Conduct](https://github.com/opensourcediversity/opensourcediversity.org/blob/main/.github/CODE_OF_CONDUCT.md) based on the [Contributor Covenant](https://www.contributor-covenant.org). By participating in this project online or at events you agree to abide by its terms.
 
 
 ## 📜 License
