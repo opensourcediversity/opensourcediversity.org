@@ -81,7 +81,9 @@ footer {
 }
 
 /*Add border-bottom for navbar*/
-
+.navbar {
+  border-bottom: 1px solid #004329;
+}
 /* BUTTONS ------------------------------------------------------------------ */
 
 .btn {
