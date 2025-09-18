@@ -18,11 +18,7 @@
 		<meta property="og:image:width" content="250">
 		<meta property="og:image:height" content="250">
 		<meta property="og:url" content="https://opensourcediversity.org">
-		<meta property="twitter:card" content="summary">
-		<meta property="twitter:title" content="Open Source Diversity">
-		<meta property="twitter:description" content="For more diversity &amp; inclusion in free &amp; open source software communities :)">
-		<meta property="twitter:image" content="img/opensourcediversity-icon.png">
-
+		
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -73,11 +69,7 @@
 								<img alt="GitHub" title="GitHub" src="img/github.svg" />
 							</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link p-2" href="https://twitter.com/osdiversity" target="_blank" rel="noopener" aria-label="Twitter">
-								<img alt="Twitter" title="Twitter" src="img/twitter.svg" />
-							</a>
-						</li>
+						
 						<li class="nav-item">
 							<a class="nav-link p-2" href="https://discourse.opensourcediversity.org" target="_blank" rel="noopener" aria-label="Discourse forum">
 								<img alt="Discourse forum" title="Discourse Forum" src="img/discourse.svg" />
@@ -361,47 +353,35 @@
 		</section>
 
 		<section id="events" class="container text-center no-highlight-effect">
-            <hr/>
-            <h2>Events</h2>
-            <div class="row">
-                <div class=" col-sm-6 col-md-4 p-4" id="twitter">
-					<a class= "twitter-timeline"
-					   href="https://twitter.com/osdiversity"
-					   data-tweet-limit="1"
-					   data-chrome="noheader nofooter noborders noscrollbar"
-					   data-link-color="#45b086"
-					   >
-						Tweets by @osdiversity
-					</a>
-                </div>
+    <hr/>
+    <h2>Events</h2>
+    <div class="row">
+        <div class="col-sm-6 col-md-4 p-4"></div>
+        <div class="col-sm-6 col-md-4 p-4" id="open-calls">
+            <h3>Monthly calls</h3>
+            <ul>
+                <li>
+                    <a href="https://events.mozilla.org/opensourcemaintainerhowwomenar" target="_blank" rel="noopener">
+                        March 21 2019: <strong>Open Source Maintainer - Women will Engineer the Future</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wiki.mozilla.org/Diversity_and_Inclusion_for_Communities_and_Contributors/DI_Call_04_04_2019" target="_blank" rel="noopener">
+                        April 4, 2019: <strong>Data, Metrics, Ethics</strong>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://wiki.mozilla.org/Diversity_and_Inclusion_for_Communities_and_Contributors#Past_Calls" target="_blank" rel="noopener">
+                        Past calls on the Mozilla wiki
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-                <div class=" col-sm-6 col-md-4 p-4" id="open-calls">
-					<!-- <iframe src="https://wiki.mozilla.org/Diversity_and_Inclusion_for_Communities_and_Contributors#Future_Calls"></iframe> -->
-					<h3>Monthly calls</h3>
-					<ul>
-						<li>
-							<a href="https://events.mozilla.org/opensourcemaintainerhowwomenar" target="_blank" rel="noopener">
-								March 21 2019: <strong>Open Source Maintainer -  Women will Engineer the Future</strong>
-							</a>
-						</li>
-						<li>
-							<a href="https://wiki.mozilla.org/Diversity_and_Inclusion_for_Communities_and_Contributors/DI_Call_04_04_2019" target="_blank" rel="noopener">
-								April 4, 2019: <strong>Data, Metrics, Ethics</strong>
-							</a>
-						</li>
-						<li>
-							<a href="https://wiki.mozilla.org/Diversity_and_Inclusion_for_Communities_and_Contributors#Past_Calls" target="_blank" rel="noopener">
-								Past calls on the Mozilla wiki
-							</a>
-						</li>
-					</ul>
-                </div>
-
-                <a class="col-sm-6 col-md-4 p-4" id="meetup">
-                </a>
-
-            </div>
-        </section>
+        <a class="col-sm-6 col-md-4 p-4" id="meetup">
+		</a>
+    </div>
+</section>
 
 		<section id="articles" class="container text-center no-highlight-effect">
 			<hr/>
@@ -477,9 +457,6 @@
 				<a class="social-link" href="https://github.com/opensourcediversity" target="_blank" rel="noopener" aria-label="GitHub">
 					<img alt="GitHub" title="GitHub" src="img/github.svg" />
 				</a>
-				<a class="social-link" href="https://twitter.com/osdiversity" target="_blank" rel="noopener" aria-label="Twitter">
-					<img alt="Twitter" title="Twitter" src="img/twitter.svg" />
-				</a>
 				<a class="social-link" href="https://discourse.opensourcediversity.org" target="_blank" rel="noopener" aria-label="Discourse forum">
 					<img alt="Discourse forum" title="Discourse Forum" src="img/discourse.svg" />
 				</a>
@@ -498,20 +475,7 @@
 			if('serviceWorker' in navigator) {
 			  navigator.serviceWorker.register('/service_worker.js')
 			}
-			window.twttr = (function(d, s, id) {
-				var js, fjs = d.getElementsByTagName(s)[0],
-                    t = window.twttr || {};
-                if (d.getElementById(id)) return t;
-                js = d.createElement(s);
-                js.id = id;
-                js.src = "https://platform.twitter.com/widgets.js";
-                fjs.parentNode.insertBefore(js, fjs);
-				 t._e = [];
-                t.ready = function(f) {
-                    t._e.push(f);
-                };
-				 return t;
-            }(document, "script", "twitter-wjs"));
+			
 		</script>
 		<script src="scripts/meetupAPI.js"></script>
 	</body>
