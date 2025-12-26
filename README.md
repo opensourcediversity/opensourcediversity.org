@@ -15,6 +15,8 @@ If you found an issue on the page or only have a quick suggestion (for example a
 You can [open this repository using Gitpod](https://gitpod.io/#https://github.com/opensourcediversity/opensourcediversity.org) and edit it there. Gitpod sets everything up, and you get an IDE as well as an instant preview of your changes!
 ![](img/gitpod.png)
 
+You can [open this repository using Visual Studio Code](https://code.visualstudio.com/) and edit it there. Visual Studio Code sets also everything up, and you get an IDE as well as an instant preview of your changes!
+![](img follows)
 
 ### More advanced version
 
