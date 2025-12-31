@@ -471,15 +471,48 @@
 		<script src="vendor/popper.min.js"></script>
 		<script src="vendor/bootstrap.min.js"></script>
 		<script>
-		    $(document).ready(function () {
-    			$('.first-button').on('click', function () {
-  				$('.icon-menu-toggle').toggleClass('open');
-    			});
-		    });
-			if('serviceWorker' in navigator) {
-			  navigator.serviceWorker.register('/service_worker.js')
-			}
-			
+			$(document).ready(function () {
+  			const $navbarCollapse = $('#navbar');
+  			const $toggler = $('.navbar-toggler');
+  			const $icon = $('.icon-menu-toggle');
+
+ 			// Hamburger click → icon animation
+  			$toggler.on('click', function () {
+    		  $icon.toggleClass('open');
+  			});
+
+  			// Nav link click → close menu
+  			$('#navbar .nav-link').on('click', function () {
+    		  if ($navbarCollapse.hasClass('show')) {
+      			$navbarCollapse.collapse('hide');
+      			$icon.removeClass('open');
+    		}
+  		});
+
+  		// Outside click → close menu
+  		$(document).on('click', function (e) {
+    	if (
+      		$navbarCollapse.hasClass('show') &&
+      		!$(e.target).closest('.navbar').length
+    	) {
+      	$navbarCollapse.collapse('hide');
+      	$icon.removeClass('open');
+    	}
+  		});
+
+  		// Scroll → close menu (mobile UX)
+  		$(window).on('scroll', function () {
+    	if ($navbarCollapse.hasClass('show')) {
+     	 	$navbarCollapse.collapse('hide');
+      		$icon.removeClass('open');
+    	}
+ 		 });
+		});
+
+		// service worker (as it is)
+		if ('serviceWorker' in navigator) {
+ 		  navigator.serviceWorker.register('/service_worker.js');
+		}
 		</script>
 		<script src="scripts/meetupAPI.js"></script>
 	</body>

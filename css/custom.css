@@ -416,3 +416,45 @@ footer {
 .icon-menu-toggle.open .svg-menu-toggle .line-3 {
 	transform: rotate(-45deg) translateY(0) translateX(0);
 }
+
+/* ================= MOBILE NAVBAR SMOOTH BEHAVIOUR ================= */
+@media (max-width: 991.98px) {
+
+  /* Navbar stays fixed */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+  }
+
+  /* Mobile menu should overlay, not affect layout */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+
+    background-color: #45b086;
+    transform: translateY(-10px);
+    opacity: 0;
+
+    transition: transform 0.35s ease, opacity 0.25s ease;
+    pointer-events: none;
+  }
+
+  .navbar-collapse.show {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+}
+
+/* FIX: Hero (jumbotron) must scroll normally */
+.jumbotron {
+  position: relative;
+  will-change: auto;
+  transform: translateZ(0);
+}
+
+
