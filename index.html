@@ -476,6 +476,13 @@
   				$('.icon-menu-toggle').toggleClass('open');
     			});
 		    });
+			$('body').on('click',function(e) {
+				    const isNavbarOpen = $('#navbar').hasClass('show')
+					if(isNavbarOpen) {
+						$('#navbar').removeClass('show');
+						$('.icon-menu-toggle').removeClass('open');
+					}
+    			});
 			if('serviceWorker' in navigator) {
 			  navigator.serviceWorker.register('/service_worker.js')
 			}
