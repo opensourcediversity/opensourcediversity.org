@@ -2,135 +2,134 @@
 
 /* latin-ext */
 @font-face {
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 400; /* normal */
-	src: local('Nunito Regular'), local('Nunito-Regular'),
-		url('Nunito-Regular-latin-ext.woff2') format('woff2'),
-		url('Nunito-Regular.ttf') format('truetype');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400; /* normal */
+  src: local('Nunito Regular'), local('Nunito-Regular'),
+    url('Nunito-Regular-latin-ext.woff2') format('woff2'),
+    url('Nunito-Regular.ttf') format('truetype');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 400; /* normal */
-	src: local('Nunito Regular'), local('Nunito-Regular'),
-		url('Nunito-Regular.woff2') format('woff2'),
-		url('Nunito-Regular.ttf') format('truetype');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 400; /* normal */
+  src: local('Nunito Regular'), local('Nunito-Regular'),
+    url('Nunito-Regular.woff2') format('woff2'),
+    url('Nunito-Regular.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
 /* latin-ext */
 @font-face {
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 700; /* bold */
-	src: local('Nunito Bold'), local('Nunito-Bold'),
-		url('Nunito-Bold-latin-ext.woff2') format('woff2'),
-		url('Nunito-Bold.ttf') format('truetype');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700; /* bold */
+  src: local('Nunito Bold'), local('Nunito-Bold'),
+    url('Nunito-Bold-latin-ext.woff2') format('woff2'),
+    url('Nunito-Bold.ttf') format('truetype');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
 /* latin */
 @font-face {
-	font-family: 'Nunito';
-	font-style: normal;
-	font-weight: 700; /* bold */
-	src: local('Nunito Bold'), local('Nunito-Bold'),
-		url('Nunito-Bold.woff2') format('woff2'),
-		url('Nunito-Bold.ttf') format('truetype');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700; /* bold */
+  src: local('Nunito Bold'), local('Nunito-Bold'),
+    url('Nunito-Bold.woff2') format('woff2'),
+    url('Nunito-Bold.ttf') format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 
-html{
-	scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-	font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad, sans-serif;
-	font-weight: normal;
-	line-height: 170%;
+  font-family: 'Nunito', 'Open Sans', Frutiger, Calibri, 'Myriad Pro', Myriad,
+    sans-serif;
+  font-weight: normal;
+  line-height: 170%;
 }
 
 .navbar-brand,
 h1,
 h2,
 h3 {
-	font-weight: bold;
+  font-weight: bold;
 }
-
-
-
-
 
 /* COLOR -------------------------------------------------------------------- */
 
 .navbar,
 .jumbotron,
 footer {
-	background-color: #45b086 !important;
-	color: #fff;
-	border-radius: 0;
-	/* better readability on bright background */
-	text-shadow: 0 0 2px rgba(10, 30, 20, .4);
+  background-color: #45b086 !important;
+  color: #fff;
+  border-radius: 0;
+  /* better readability on bright background */
+  text-shadow: 0 0 2px rgba(10, 30, 20, 0.4);
 }
 
-
-
-
-
+/*Add border-bottom for navbar*/
+.navbar {
+  border-bottom: 1px solid #004329;
+}
 /* BUTTONS ------------------------------------------------------------------ */
 
 .btn {
-	border-radius: 100px;
+  border-radius: 100px;
 }
 .btn img {
-	width: 1rem;
-	height: 1rem;
-	vertical-align: sub;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: sub;
 }
 .jumbotron .btn {
-	background: transparent;
-	color: #fff;
-	border: 2px solid #fff;
-	font-weight: bold;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-weight: bold;
 }
 .jumbotron .btn:hover,
 .jumbotron .btn:focus,
 .jumbotron .btn:active {
-	background: #fff;
-	color: #212529;
+  background: #fff;
+  color: #212529;
 }
 .jumbotron .btn:hover img,
 .jumbotron .btn:focus img,
 .jumbotron .btn:active img {
-	filter: invert(80%);
+  filter: invert(80%);
 }
-
-
-
-
 
 /* LINKS -------------------------------------------------------------------- */
 
 a {
-	text-decoration: none !important;
-	outline: none !important;
+  text-decoration: none !important;
+  outline: none !important;
 }
 
 .navbar-dark .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus,
 .navbar-dark .navbar-nav .nav-link:active {
-    color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
 }
 
 section a,
 section a h3,
 section a p {
-	color: #212529;
+  color: #212529;
 }
 section a:hover,
 section a:hover h3,
@@ -141,38 +140,34 @@ section a:focus p,
 section a:active,
 section a:active h3,
 section a:active p {
-	color: #45b086;
+  color: #45b086;
 }
 
 footer a {
-	color: #fff !important;
-	font-weight: bold;
+  color: #fff !important;
+  font-weight: bold;
 }
 footer a:hover,
 footer a:focus,
 footer a:active {
-	opacity: .8;
+  opacity: 0.8;
 }
-
-
-
-
 
 /* HOVER/FOCUS EFFECT ------------------------------------------------------- */
 
 section:not(.no-highlight-effect) a:hover::after,
 section:not(.no-highlight-effect) a:focus::after,
 section:not(.no-highlight-effect) a:active::after {
-    content: url('../img/highlight.svg');
-    position: absolute;
-	top: 18px;
-	left: calc(50% - 128px);
+  content: url('../img/highlight.svg');
+  position: absolute;
+  top: 18px;
+  left: calc(50% - 128px);
 }
 
 .nav-item,
 .navbar-brand,
 .navbar-toggler {
-	position: relative;
+  position: relative;
 }
 
 .nav-link:focus::before,
@@ -183,10 +178,10 @@ section:not(.no-highlight-effect) a:active::after {
 .navbar-brand:active::before,
 .navbar-toggler:focus::before,
 .navbar-toggler:hover::before {
-	content: url('../img/highlight-white-small-left.svg');
-	position: absolute;
-	top: 2px;
-	left: -10px;
+  content: url('../img/highlight-white-small-left.svg');
+  position: absolute;
+  top: 2px;
+  left: -10px;
 }
 
 .nav-link:focus::after,
@@ -197,222 +192,212 @@ section:not(.no-highlight-effect) a:active::after {
 .navbar-brand:active::after,
 .navbar-toggler:focus::after,
 .navbar-toggler:hover::after {
-	content: url('../img/highlight-white-small-right.svg');
-	position: absolute;
-	top: 2px;
-	right: -8px;
+  content: url('../img/highlight-white-small-right.svg');
+  position: absolute;
+  top: 2px;
+  right: -8px;
 }
 
 /* Special case for the logo */
 .navbar-brand:focus::before,
 .navbar-brand:hover::before,
 .navbar-brand:active::before {
-	left: -25px;
+  left: -25px;
 }
 .navbar-brand:focus::after,
 .navbar-brand:hover::after,
 .navbar-brand:active::after {
-	right: -20px;
+  right: -20px;
 }
 
 /* Special case for the mobile nav entries */
 .navbar-collapse.show .mr-auto .nav-link:focus::before,
 .navbar-collapse.show .mr-auto .nav-link:hover::before,
 .navbar-collapse.show .mr-auto .nav-link:active::before {
-	left: -20px;
+  left: -20px;
 }
 .navbar-collapse.show .mr-auto .nav-link:focus::after,
 .navbar-collapse.show .mr-auto .nav-link:hover::after,
 .navbar-collapse.show .mr-auto .nav-link:active::after {
-	left: 65px;
+  left: 65px;
 }
-
-
-
-
 
 /* HEADER ------------------------------------------------------------------- */
 
 .navbar-brand {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand img {
-	margin-right: 5px;
-	align-self: start;
-	height: 1.2em;
+  margin-right: 5px;
+  align-self: start;
+  height: 1.2em;
 }
 
 /* Icons for Twitter, GitHub, IRC */
 .nav-link img {
-    width: 1rem;
-    height: 1rem;
-	opacity: .6;
+  width: 1rem;
+  height: 1rem;
+  opacity: 0.6;
 }
 .nav-link:hover img,
 .nav-link:focus img {
-	opacity: 1;
+  opacity: 1;
 }
 
 /* Toggle icon on mobile */
 .navbar-dark .navbar-toggler-icon {
-	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 .navbar-toggler {
-	border: none;
-	outline: none !important;
+  border: none;
+  outline: none !important;
 }
-
-
-
-
 
 /* CONTENT ------------------------------------------------------------------ */
 
 section {
-	padding-top: 32px;
+  padding-top: 32px;
 }
 
 h2 {
-	display: inline-block;
-	background-color: #fff;
-	color: #45b086 !important;
-	text-align: center;
-	padding: 16px;
-	margin-top: 32px;
+  display: inline-block;
+  background-color: #fff;
+  color: #45b086 !important;
+  text-align: center;
+  padding: 16px;
+  margin-top: 32px;
 }
 
 hr {
-	border: 2px solid #45b086 !important;
-	border-radius: 3px;
-	margin-bottom: -4.4rem;
-	margin-top: 5rem;
+  border: 2px solid #45b086 !important;
+  border-radius: 3px;
+  margin-bottom: -4.4rem;
+  margin-top: 5rem;
 }
 
 h3 {
-	margin-top: 1rem;
-	line-height: 130%;
+  margin-top: 1rem;
+  line-height: 130%;
 }
 
 .text-center .col-md-4 p,
 .text-center .col-md-4 li {
-	text-align: left;
+  text-align: left;
 }
 
 .container .row img {
-	width: 100px;
-	max-height: 100px;
-	border-radius: 50%;
-	margin-top: 20px;
+  width: 100px;
+  max-height: 100px;
+  border-radius: 50%;
+  margin-top: 20px;
 }
 
 .twitter-timeline {
-	overflow: auto;
+  overflow: auto;
 }
-
 
 /* LOGO --------------------------------------------------------------------- */
 
 .jumbotron .container > img {
-    margin: 60px 0 10px 0;
+  margin: 60px 0 10px 0;
 }
-
 
 /* FOOTER ------------------------------------------------------------------- */
 
 footer {
-	margin-top: 4rem;
-	padding: 2rem 0;
+  margin-top: 4rem;
+  padding: 2rem 0;
 }
 
-.social-link{
-	margin: 20px 10px;	
+.social-link {
+  margin: 20px 10px;
 }
-
 
 /* EXPERIMENTS -------------------------------------------------------------- */
 
-[class^='color-'], [class*='color-']  {
-	border: none;
+[class^='color-'],
+[class*='color-'] {
+  border: none;
 }
 
 .color-heartofcode,
 .color-heartofcode:hover,
 .color-heartofcode:focus,
 .color-heartofcode:active {
-	background-color: #c32025;
+  background-color: #c32025;
 }
 .color-lereset,
 .color-lereset:hover,
 .color-lereset:focus,
 .color-lereset:active {
-	background-color: #feed64;
-	color: #444444;
+  background-color: #feed64;
+  color: #444444;
 }
 .color-doubleunion,
 .color-doubleunion:hover,
 .color-doubleunion:focus,
 .color-doubleunion:active {
-	background-color: #d12aa4;
+  background-color: #d12aa4;
 }
 .color-railsgirls,
 .color-railsgirls:hover,
 .color-railsgirls:focus,
 .color-railsgirls:active {
-	background-color: #d82222;
+  background-color: #d82222;
 }
 .color-outreachy,
 .color-outreachy:hover,
 .color-outreachy:focus,
 .color-outreachy:active {
-	background-color: #58cfe5;
+  background-color: #58cfe5;
 }
 /* ---------------------------Text meant only for screen readers--------------------------- */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
 }
 /* ---------------------------Animated Hamburger Menu--------------------- */
 .navbar-toggler {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .icon-menu-toggle {
-	width: 1.2em;
-	height: 1.6em;
-	vertical-align: middle;
-	position: relative;
-	margin: 0px;
-	fill: #ffffff;
+  width: 1.2em;
+  height: 1.6em;
+  vertical-align: middle;
+  position: relative;
+  margin: 0px;
+  fill: #ffffff;
 }
 
 .svg-menu-toggle .line {
-	opacity: 1;
-	transform: rotate(0) translateY(0) translateX(0);
-	transform-origin: 1em 1em;
-	transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  opacity: 1;
+  transform: rotate(0) translateY(0) translateX(0);
+  transform-origin: 1em 1em;
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
 }
 
 .svg-menu-toggle .line-1 {
-	transform-origin: 1em 2.5em;
+  transform-origin: 1em 2.5em;
 }
 
 .svg-menu-toggle .line-3 {
-	transform-origin: 1em 2.5em;
+  transform-origin: 1em 2.5em;
 }
 
 .icon-menu-toggle.open .svg-menu-toggle .line-1 {
-	transform: rotate(45deg) translateY(0) translateX(0);
+  transform: rotate(45deg) translateY(0) translateX(0);
 }
 
 .icon-menu-toggle.open .svg-menu-toggle .line-2 {
-	opacity: 0;
+  opacity: 0;
 }
 
 .icon-menu-toggle.open .svg-menu-toggle .line-3 {
-	transform: rotate(-45deg) translateY(0) translateX(0);
+  transform: rotate(-45deg) translateY(0) translateX(0);
 }
