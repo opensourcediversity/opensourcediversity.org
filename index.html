@@ -18,7 +18,7 @@
 		<meta property="og:image:width" content="250">
 		<meta property="og:image:height" content="250">
 		<meta property="og:url" content="https://opensourcediversity.org">
-		
+
         <meta property="twitter:card" content="summary">
         <meta property="twitter:title" content="Open Source Diversity">
         <meta property="twitter:description" content="For more diversity &amp; inclusion in free &amp; open source software communities :)">
@@ -73,7 +73,7 @@
 								<img alt="GitHub" title="GitHub" src="img/github.svg" />
 							</a>
 						</li>
-						
+
 						<li class="nav-item">
 							<a class="nav-link p-2" href="https://discourse.opensourcediversity.org" target="_blank" rel="noopener" aria-label="Discourse forum">
 								<img alt="Discourse forum" title="Discourse Forum" src="img/discourse.svg" />
@@ -324,7 +324,7 @@
 					<h3>Fund Club</h3>
 					<p>Pledge $100/month to fund tech projects by and for marginalized people.</p>
 				</a>
-			</div> 
+			</div>
 			<div class="row">
 				<a class="col-sm-6 col-md-4 p-4" href="https://www.redhat.com/en/about/women-in-open-source" target="_blank" rel="noopener">
 					<img alt="" title="Women in Open Source Award" src="img/projects/womeninopensource.png" />
@@ -479,8 +479,38 @@
 			if('serviceWorker' in navigator) {
 			  navigator.serviceWorker.register('/service_worker.js')
 			}
-			
+       document.addEventListener('DOMContentLoaded', function () {
+
+        const navbar = document.querySelector('#navbar');
+        const navbarToggler = document.querySelector('.navbar-toggler');
+
+        // Close navbar when a navigation link is clicked
+        document.querySelectorAll('#navbar .nav-link').forEach(function (link) {
+            link.addEventListener('click', function () {
+                if (navbar.classList.contains('show')) {
+                    $('#navbar').collapse('hide');
+                     navbarToggler.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+
+        // Close navbar when clicking outside
+        document.addEventListener('click', function (event) {
+            if (
+                navbar.classList.contains('show') &&
+                !navbar.contains(event.target) &&
+                !navbarToggler.contains(event.target)
+            ) {
+                $('#navbar').collapse('hide');
+                 navbarToggler.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+
+
+    });
 		</script>
 		<script src="scripts/meetupAPI.js"></script>
+
 	</body>
 </html>
